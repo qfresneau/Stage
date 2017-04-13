@@ -1,0 +1,127 @@
+Date : 03/04/2017.
+
+Descriptif : 
+	Découverte de l'équipe et des locaux. Découverte rapide des bases de données et de l'environnement.
+	Analyse du dossier sur le système existant (PRJ - 00166).
+	Connexion/Inscription/Autorisation pour le compte Fleury Michon (serveur de développement 450 - SRVDEVGARE).
+
+Date : 04/04/2017.
+
+Descriptif : 
+	Relecture du dossier : mise sur papier des différentes incompréhension.
+	Synthèse de l'enssemble des points à aborder.
+	Préparation du rapport de stage et du support de présentation (pour la soutenance).
+	Révision des différents langages qui seront utiliser durant le stage (UML, SQL, Oracle, VB.NET, WPF, MVVM).
+
+Date : 05/04/2017.
+
+Descriptif : 
+	Mise en relation avec M.RéAU Pierrick (développeur de la version 1.1 du projet PRJ - 000166).
+	Accès autoriser au référentiel et donc au dossier du projet MesToColis : 
+		Observation des différentes bases de données avec Oracle SQL DEVELOPER.
+		Observation des fichiers qui composent l'application FleuryMichon.MesToColis.IHM.sln.
+	Lecture de la documentation "Zipher Text Communication Protocol".
+
+Date : 06/04/2017.
+
+Descriptif : 
+	Auto-apprentissage de VB.NET avec OpenClassrooms (1ère partie).
+	https://openclassrooms.com/courses/apprenez-a-programmer-en-vb-net
+	Lancement du projet "Suppression d'iDaro" (réunion avec les utilisateurs).
+
+Point sur le projet :
+	ODJ >	1 - Priorités (Mulet ? L98 ? L99 ?)
+		2 - Tests (sur Mulet ? sur Réseau ? Modèle VideoJet ?)
+		3 - Groupe projet (DSI, Maintenance, Production, Fabien) et Organisation (réunion de projet tous les 15 jours ?)
+		4 - Planning (s.15 XML, s.16 Mulet, s.17 Tests ?)
+		5 - Masque d'étiquette (voir avec Maintenance)
+		6 - Visite du site de TLM avec Fabien
+
+Résultat de la réunion :
+	1 - La priorité reviens sur l'étiqueteuse Mulet, l'application envera les données directement à l'automate (synchronisation).
+	2 - Les test seront réalisé directement sur l'automate sur le site TLM, celui ci sera directement connecté au reste du réseau.
+	3 - Organisation et groupe de projet à voir dans les prochaines semaines.
+	4 - Fonctionnement de l'étiqueteuse "Mulet" souhaité pour fin Mai.
+	5 - Masque d'étiquette de TLM à refaire au format XML (synchronisation).
+
+Date : 07/04/2017.
+
+Descriptif : 
+	Auto-apprentissage de VB.NET avec OpenClassrooms (2nde partie).
+	https://openclassrooms.com/courses/apprenez-a-programmer-en-vb-net/introduction-sur-les-bases-de-donnees
+	Rendez-vous avec Réau Pierrick pour explication du code des différentes applications.
+	Rédaction d'un cahier des charges provisoire.
+
+Point sur le projet :
+	Mise à niveau des priorités : XML --> Optimisation (donc à voir plus tard dans le projet)
+				      Mulet --> Envoi direct de l'ensemble des données à l'automate (date butoire : avant fin mai).
+	Mise en relation avec Réau Pierrick pour explication du protocole de communication avec un automate.
+	Rappel pour la rédaction du dossier de spécification regroupant toutes les modifications sur l'application.
+	Prise en main avec VB.NET et les logiciels (pour automate) lors de la semaine 15.
+	Découverte de OneNote --> utilisation recommandé.
+
+Date : 10/04/2017.
+
+Descriptif : 
+	Fin de l'auto-apprentissage de VB.NET avec OpenClassrooms (3ème partie).
+	https://openclassrooms.com/courses/apprenez-a-programmer-en-vb-net/introduction-a-la-communication
+	Lecture des documentation/spéculations des différents programme existant (pour les applications MesToColis, ACQMoulageToMes et MesToTrk).
+	http://intranet/sa/informatique/referentiel/Spcification/Forms/AllItems.aspx?RootFolder=%2Fsa%2Finformatique%2Freferentiel%2FSpcification%2FFleuryMichon
+	Développement d'une application de communication (version 1) entre le logiciel et l'automate DB1 :
+		- Mise en place de l'interface graphique de l'application (une partie lecture, une partie écriture).
+		- Analyse des autres codes éxistant (MesToTrk pour écriture et ACQMoulageToMes pour lecture).
+
+Date : 11/04/2017.
+
+Descriptif : 
+	Développement d'une application (version 1) de communication entre le logiciel et l'automate DB1 :
+		- Mise en place des différents évènements liés aux boutons.
+		- Analyse des autres codes éxistant (librairie, structure du code et arborescence du programme).
+		- Recherche sur le protocole OPC (Serveur/Client).
+Sources : 
+	https://www.faweb.net/us/opc/sample_vbnet.html
+	http://hadiscada.blogspot.fr/2013/07/my-opc-client.html
+	http://www.bh-automation.fr/Ressources/Pour-les-automaticiens/Communications/Protocoles.html (protocole OPC)
+
+Date : 12/04/2017.
+
+Descriptif : 
+	Développement d'une application (version 1) de communication entre le logiciel et l'automate DB1 : 
+		- Modification de l'ihm avec l'ajout d'un bouton connexion au serveur OPC.
+		- Compréhention de l'organisation du code pour la connexion.
+	Recherche de solution au problème rencontré.
+
+Date : 13/04/2017.
+
+Descriptif : 
+	
+
+Date : 14/04/2017.
+
+Descriptif : 
+	
+
+Date : 17/04/2017.
+
+Descriptif : 
+	
+
+Date : 18/04/2017.
+
+Descriptif : 
+	Visite du site de TLm (Suremballage) de 15h00 à 16h00.
+
+Date : 19/04/2017.
+
+Descriptif : 
+	
+
+Date : 20/04/2017.
+
+Descriptif : 
+	
+
+Date : 21/04/2017.
+
+Descriptif : 
+	

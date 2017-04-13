@@ -1,0 +1,53 @@
+10/04/2016 : 
+
+Développement d'une application de communication entre logiciel et automate DB1 (lecture et écriture).
+Mise en place de l'interface graphique de l'application.
+Difficulté rencontré : Framework (utilisation, définition...)
+Solution : Dossier librairie à mettre à la racine
+Partie lecture :
+	Ecriture sur l'adresse D1 de l'automate DB1 avec le logiciel APClient.
+	Lecture de l'information via l'application développé.
+
+11/04/2016 : 
+
+Développement d'une application de communication entre logiciel et automate DB1 (lecture et écriture).
+Mise en place des différents évènement liés aux boutons.
+Problème rencontré : fichier OPCConfigurationSection (lecture dans fichier xml)
+Hypothèses : 
+	- Problème de lien avec la Framework Fleury Michon ?
+	- Problème venant de la configuration du fichier ?
+Sources : 
+Compréhention de la communication via Client/Serveur OPC
+	http://hadiscada.blogspot.fr/2013/07/my-opc-client.html
+	https://www.faweb.net/us/opc/sample_vbnet.html
+
+12/04/2016 : 
+
+Développement d'une application de communication entre logiciel et automate DB1 (connexion, lecture et écriture).
+Mise en place dans l'ihm d'une partie connexion au serveur OPC.
+Problème rencontré : fonction OPCServer.connect() (connexion au serveur OPC)
+Hypothèses : 
+	- Problème de lien avec les différentes Frameworks utilisés ?
+	- Problème d'initialisation de l'objet OPCServer ?
+Solution : Il suffisait d'instancier l'objet OPCServer (new), d'où l'erreur "La référence d'objet n'est pas définie à une instance d'un objet."
+Sources : 
+Compréhention de la communication via Client/Serveur OPC
+	http://codes-sources.commentcamarche.net/forum/affich-1446285-probleme-avec-la-dll-opcdaauto-dll
+	http://codes-sources.commentcamarche.net/forum/affich-1616917-connexion-entre-un-api-elau-c600-et-un-pc-via-opc-server
+
+13/04/2016 : 
+
+Développement d'une application de communication entre logiciel et automate DB1 (connexion, lecture et écriture).
+Mise en place de la lecture et l'écriture au sein de l'automate DB1 (adresse D1).
+Problème rencontré : fonctions SyncWrite et SyncRead (écriture et lecture)
+Hypothèses : 
+	- Différence à trouver entre les fonctions normales et les fonctions Sync.
+	- Mauvais paramétrage du serveur OPC (Group puis Item) ?
+	- Mauvais paramétrage de la fonction ?
+Solution : Utilisation de la fonction Write(Value) et Read(Source, Result).
+Result est une variable de type System.Int32, optimisation possible pour gérer tous les types.  
+Sources : 
+Recherche dans le code existant avec les fichiers MesToTrk et ACQMoulageToMes.
+
+14/04/2017 : 
+
