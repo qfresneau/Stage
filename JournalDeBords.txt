@@ -8,10 +8,10 @@ Descriptif :
 Date : 04/04/2017.
 
 Descriptif : 
-	Relecture du dossier : mise sur papier des différentes incompréhension.
+	Relecture du dossier : mise sur papier des différentes incompréhensions.
 	Synthèse de l'enssemble des points à aborder.
 	Préparation du rapport de stage et du support de présentation (pour la soutenance).
-	Révision des différents langages qui seront utiliser durant le stage (UML, SQL, Oracle, VB.NET, WPF, MVVM).
+	Révision des différents langages qui seront utilisé durant le stage (UML, SQL, Oracle, VB.NET, WPF, MVVM).
 
 Date : 05/04/2017.
 
@@ -33,7 +33,7 @@ Point sur le projet :
 	ODJ >	1 - Priorités (Mulet ? L98 ? L99 ?)
 		2 - Tests (sur Mulet ? sur Réseau ? Modèle VideoJet ?)
 		3 - Groupe projet (DSI, Maintenance, Production, Fabien) et Organisation (réunion de projet tous les 15 jours ?)
-		4 - Planning (s.15 XML, s.16 Mulet, s.17 Tests ?)
+		4 - Planning (s.15 - XML, s.16 - Mulet, s.17 - Tests ?)
 		5 - Masque d'étiquette (voir avec Maintenance)
 		6 - Visite du site de TLM avec Fabien
 
@@ -54,7 +54,7 @@ Descriptif :
 
 Point sur le projet :
 	Mise à niveau des priorités : XML --> Optimisation (donc à voir plus tard dans le projet)
-				      Mulet --> Envoi direct de l'ensemble des données à l'automate (date butoire : avant fin mai).
+				      Mulet --> Envoi direct de l'ensemble des données à l'automate (date butoir : avant fin mai).
 	Mise en relation avec Réau Pierrick pour explication du protocole de communication avec un automate.
 	Rappel pour la rédaction du dossier de spécifications générales regroupant toutes les modifications sur l'application.
 	Prise en main avec VB.NET et les logiciels (pour automate) lors de la semaine 15.
@@ -69,14 +69,14 @@ Descriptif :
 	http://intranet/sa/informatique/referentiel/Spcification/Forms/AllItems.aspx?RootFolder=%2Fsa%2Finformatique%2Freferentiel%2FSpcification%2FFleuryMichon
 	Développement d'une application de communication (version 1) entre le logiciel et l'automate DB1 :
 		- Mise en place de l'interface graphique de l'application (une partie lecture, une partie écriture).
-		- Analyse des autres codes éxistant (MesToTrk pour écriture et ACQMoulageToMes pour lecture).
+		- Analyse des autres codes existant (MesToTrk pour écriture et ACQMoulageToMes pour lecture).
 
 Date : 11/04/2017.
 
 Descriptif : 
 	Développement d'une application (version 1) de communication entre le logiciel et l'automate DB1 :
 		- Mise en place des différents évènements liés aux boutons.
-		- Analyse des autres codes éxistant (librairie, structure du code et arborescence du programme).
+		- Analyse des autres codes existant (librairie, structure du code et arborescence du programme).
 		- Recherche sur le protocole OPC (Serveur/Client).
 Sources : 
 	https://www.faweb.net/us/opc/sample_vbnet.html
@@ -87,15 +87,15 @@ Date : 12/04/2017.
 
 Descriptif : 
 	Développement d'une application (version 1) de communication entre le logiciel et l'automate DB1 : 
-		- Modification de l'ihm avec l'ajout d'un bouton connexion au serveur OPC.
-		- Compréhention de l'organisation du code pour la connexion.
+		- Modification de l’IHM avec l'ajout d'un bouton connexion au serveur OPC.
+		- Compréhension de l'organisation du code pour la connexion.
 	Recherche de solution au problème rencontré.
 
 Date : 13/04/2017.
 
 Descriptif : 
 	Développement d'une application (version 1) de communication entre le logiciel et l'automate DB1 : 
-		- Modification de l'ihm avec l'ajout d'un bouton déconnexion du serveur OPC.
+		- Modification de l’IHM avec l'ajout d'un bouton déconnexion du serveur OPC.
 		- Mise en place de l'écriture, la lecture et la déconnexion.
 		- Développement terminé.
 	Rédaction d'un dossier de spécifications générales sur la version 1 de l'application applicomDB1.
@@ -113,19 +113,61 @@ Descriptif :
 Date : 18/04/2017.
 
 Descriptif : 
-	Visite du site de TLm (Suremballage) de 15h00 à 16h00.
+	Développement d'une application (version 2) de communication entre le logiciel et l'automate DB1 : 
+		- Changement des priorités, analyse du code de MesToColis pour analyse de la fonction de lecture des paramètres de l'application (XML).
+		- Interface à changer et structuration du code à continuer.
+	Visite du site de TLM (Suremballage) de 15h00 à 16h30 (explication des différents processus du site TLM et du fonctionnement du logiciel MES).
 
 Date : 19/04/2017.
 
 Descriptif : 
-	
+	Développement d'une application (version 2) de communication entre le logiciel et l'automate DB1 : 
+		- Modification de l'interface graphique.
+		- Analyse de la fonction de paramétrage. 	
 
 Date : 20/04/2017.
 
 Descriptif : 
-	
+	Mise en attente de la version 2 de l'application  (applicomDB1).
+	Analyse de l'application MesToColis (code, structure et diagramme de séquence) --> Levé des différentes questions, incompréhensions etc.
+	Rédaction du dossier de spécification détaillée (début).
 
 Date : 21/04/2017.
 
-Descriptif : 
+Descriptif :
+	Ajout de code dans la solution MesToColis (Configuration pour automate, lecture configuration) --> Reste des incompréhensions.
+	Analyse de l'application MesToColis (code, structure et diagramme de séquence) --> Levé des différentes questions, incompréhensions etc.
+
+Date : 22/04/2017.
+
+Descriptif :	
+	Développement d'une application (version 2) de communication entre le logiciel et l'automate DB1 : 
+		- Mise en place des fonctions de paramétrage de l'application.
+		- Développement terminé.
+Sources :
+	https://msdn.microsoft.com/fr-fr/library/af1y26ew(v=vs.80).aspx
+
+Date : 25/04/2017.
+
+Descriptif :	
+	
+
+Date : 26/04/2017.
+
+Descriptif :	
+	
+
+Date : 27/04/2017.
+
+Descriptif :	
+	
+
+Date : 28/04/2017.
+
+Descriptif :	
+	
+
+Date : 29/04/2017.
+
+Descriptif :	
 	

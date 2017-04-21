@@ -1,4 +1,4 @@
-10/04/2016 : 
+10/04/2017 : 
 
 Développement d'une application de communication entre logiciel et automate DB1 (lecture et écriture) version 1.
 Mise en place de l'interface graphique de l'application.
@@ -6,12 +6,12 @@ Difficultés rencontrés : Framework (utilisation, définition...)
 Solution : Dossier librairie à mettre à la racine
 Partie lecture :
 	Ecriture sur l'adresse D1 de l'automate DB1 avec le logiciel APClient.
-	Lecture de l'information via l'application développé.
+	Lecture de l'information via l'application développée.
 
-11/04/2016 : 
+11/04/2017 : 
 
 Développement d'une application de communication entre logiciel et automate DB1 (lecture et écriture) version 1.
-Mise en place des différents évènement liés aux boutons.
+Mise en place des différents évènements liés aux boutons.
 Problèmes rencontrés : fichier OPCConfigurationSection (lecture dans fichier xml)
 Hypothèses : 
 	- Problème de lien avec la Framework Fleury Michon ?
@@ -21,7 +21,7 @@ Compréhention de la communication via Client/Serveur OPC
 	http://hadiscada.blogspot.fr/2013/07/my-opc-client.html
 	https://www.faweb.net/us/opc/sample_vbnet.html
 
-12/04/2016 : 
+12/04/2017 : 
 
 Développement d'une application de communication entre logiciel et automate DB1 (connexion, lecture et écriture) version 1.
 Mise en place dans l'ihm d'une partie connexion au serveur OPC.
@@ -35,7 +35,7 @@ Compréhention de la communication via Client/Serveur OPC
 	http://codes-sources.commentcamarche.net/forum/affich-1446285-probleme-avec-la-dll-opcdaauto-dll
 	http://codes-sources.commentcamarche.net/forum/affich-1616917-connexion-entre-un-api-elau-c600-et-un-pc-via-opc-server
 
-13/04/2016 : 
+13/04/2017 : 
 
 Développement d'une application de communication entre logiciel et automate DB1 (connexion, lecture et écriture) version 1.
 Mise en place de la lecture et l'écriture au sein de l'automate DB1 (adresse D1).
@@ -49,9 +49,47 @@ Result est une variable de type System.Int32, optimisation possible pour gérer t
 Sources : 
 Recherche dans le code existant avec les fichiers MesToTrk et ACQMoulageToMes.
 
-14/04/2016 : 
+14/04/2017 :
+ 
 Développement d'une application de communication entre logiciel et automate DB1 (connexion, lecture et écriture) version 2.
 Difficultés rencontrés : Rendre le code plus orienté objet en copiant la structure existante.
 Sources : 
 Recherche dans le code existant avec les fichiers MesToTrk et ACQMoulageToMes.
 https://www.kepware.com/en-us/support/resource-library/technical-notes/canonical-data-types/
+
+20/04/2017 :
+
+Développement d'une application de communication entre logiciel et automate DB1 (connexion, lecture et écriture) version 2.
+Difficultés rencontrés : Connexion au serveur "APPLICOM.OPCServer.1" impossible.
+Hypothèses : 
+	- Maintenance de prévu sur le serveur ?
+	- Trop de tentatives de connexion pendant le développement donc bloqués ? Connexion à un automate émulé donc normalement pas de risque.
+Essais : 
+	- Test de la version 1 de l'applicomDB1 (fonctionnel) --> impossible de se connecter.
+	- Test de connexion avec le logiciel OPClient --> Non, l'application ne répond plus une fois la connexion lancée.
+	- Arréter et relancer OPClient via le gestionnaire de tâche --> Non.
+Solution : Demande de relance du service --> OK.
+
+21/04/2017 :
+Développement d'une application de communication entre logiciel et automate DB1 (connexion, lecture et écriture) version 2.
+Problème rencontré : Paramétrage du serveur non pris en compte.
+Hypothèses : 
+	- Imports inutile et qui rentre en conflits (Tracer) ?
+Essais : 
+	- Essai sans les imports.
+
+Problème rencontré : Fonction add() ne fonctionne pas.
+Hypothèses : 
+	- La fonction peut-elle prendre un paramètre ? Normalement oui, un objet Name.
+Essais : 
+	- Essai sans paramètres.
+	- Essai en mode debug --> En mode debug, le programme est fonctionnel.
+
+Problème rencontré : Ecriture et Lecture non fonctionnel.
+Hypothèses : 
+	- Imports inutile et qui rentre en conflits (Tracer) ?
+Essais : 
+	- Problème venant de l'instanciation de l'objet GroupeOPC, il n'était pas fait donc l'écriture n'était pas possible.
+Sources :
+Recherches de solutions dans l'ensemble deS erreurs stockées sur le site de MSDN.
+https://msdn.microsoft.com/fr-fr/library/af1y26ew(v=vs.80).aspx
