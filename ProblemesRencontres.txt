@@ -71,12 +71,14 @@ Essais :
 Solution : Demande de relance du service --> OK.
 
 21/04/2017 :
+
 Développement d'une application de communication entre logiciel et automate DB1 (connexion, lecture et écriture) version 2.
 Problème rencontré : Paramétrage du serveur non pris en compte.
 Hypothèses : 
 	- Imports inutile et qui rentre en conflits (Tracer) ?
 Essais : 
 	- Essai sans les imports.
+
 
 Problème rencontré : Fonction add() ne fonctionne pas.
 Hypothèses : 
@@ -93,3 +95,40 @@ Essais :
 Sources :
 Recherches de solutions dans l'ensemble deS erreurs stockées sur le site de MSDN.
 https://msdn.microsoft.com/fr-fr/library/af1y26ew(v=vs.80).aspx
+
+24/04/2017 : 
+
+Développement de l'application MesToColis.
+Sources : 
+Dossier de spécifications générales de l'application MesToColis.
+
+25/04/2017 : 
+
+Développement de l'application MesToColis.
+Problème rencontré : Communication entre l'automate Schneider et étiqueteuse non pris en charge. --> Recherche de solution par le responsable (Sébastien Marais).
+Solution : Communication réussi, tentative d'échange de trame simple en Zipher ASCII.
+Problème rencontré : La communication OPC ne sera peut être pas utilisable avec le Schneider.
+Essais:
+	- Recherche sur les sites officielles. --> La marque Schneider Electronics intervient dans les automates pris en charge par la communication OPC (Framework Automation).
+Sources : 
+Dossier de spécifications générales de l'application MesToColis.
+http://www.automation-sense.com/blog/automatisme/communication-pc-automate-avec-visual-basic-ou-c.html
+
+26/04/2017 : 
+
+Développement de l'application MesToColis.
+Difficulté rencontrée : Recherche des différents paramètres et fonctions d'envoies à réaliser ou revoir sur l'application.
+Sources : 
+Dossier de spécifications générales de l'application MesToColis.
+
+27/04/2017 : 
+
+Développement de l'application MesToColis.
+Sources : 
+Dossier de spécifications générales de l'application MesToColis.
+
+28/04/2017 : 
+
+Développement de l'application MesToColis.
+Sources : 
+Dossier de spécifications générales de l'application MesToColis.

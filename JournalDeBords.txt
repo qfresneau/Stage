@@ -1,3 +1,7 @@
+======================================================================================================================
+							AVRIL
+======================================================================================================================Date : 03/04/2017.
+
 Date : 03/04/2017.
 
 Descriptif : 
@@ -28,14 +32,7 @@ Descriptif :
 	Auto-apprentissage de VB.NET avec OpenClassrooms (1ère partie).
 	https://openclassrooms.com/courses/apprenez-a-programmer-en-vb-net
 	Lancement du projet "Suppression d'iDaro" (réunion avec les utilisateurs).
-
-Point sur le projet :
-	ODJ >	1 - Priorités (Mulet ? L98 ? L99 ?)
-		2 - Tests (sur Mulet ? sur Réseau ? Modèle VideoJet ?)
-		3 - Groupe projet (DSI, Maintenance, Production, Fabien) et Organisation (réunion de projet tous les 15 jours ?)
-		4 - Planning (s.15 - XML, s.16 - Mulet, s.17 - Tests ?)
-		5 - Masque d'étiquette (voir avec Maintenance)
-		6 - Visite du site de TLM avec Fabien
+	Point sur stage.
 
 Résultat de la réunion :
 	1 - La priorité reviens sur l'étiqueteuse Mulet, l'application envera les données directement à l'automate (synchronisation).
@@ -51,14 +48,7 @@ Descriptif :
 	https://openclassrooms.com/courses/apprenez-a-programmer-en-vb-net/introduction-sur-les-bases-de-donnees
 	Rendez-vous avec Réau Pierrick pour explication du code des différentes applications.
 	Rédaction d'un cahier des charges provisoire.
-
-Point sur le projet :
-	Mise à niveau des priorités : XML --> Optimisation (donc à voir plus tard dans le projet)
-				      Mulet --> Envoi direct de l'ensemble des données à l'automate (date butoir : avant fin mai).
-	Mise en relation avec Réau Pierrick pour explication du protocole de communication avec un automate.
-	Rappel pour la rédaction du dossier de spécifications générales regroupant toutes les modifications sur l'application.
-	Prise en main avec VB.NET et les logiciels (pour automate) lors de la semaine 15.
-	Découverte de OneNote --> utilisation recommandé.
+	Point sur le stage.
 
 Date : 10/04/2017.
 
@@ -98,7 +88,7 @@ Descriptif :
 		- Modification de l’IHM avec l'ajout d'un bouton déconnexion du serveur OPC.
 		- Mise en place de l'écriture, la lecture et la déconnexion.
 		- Développement terminé.
-	Rédaction d'un dossier de spécifications générales sur la version 1 de l'application applicomDB1.
+	Rédaction d'un dossier de spécification détaillée sur l'application applicomDB1.
 	Développement d'une application (version 2) de communication entre le logiciel et l'automate DB1 : 
 		- Analyse du code et de l'organisation des applications existante.
 
@@ -108,7 +98,7 @@ Descriptif :
 	Développement d'une application (version 2) de communication entre le logiciel et l'automate DB1 : 
 		- Restructuration du code et de l'arborescence de l'application.
 	Lecture documentation sur "Canonical Data Types for OPC". 
-	Mise à jour du dossier de spécifications générales.
+	Mise à jour du dossier de spécification détaillée (applicomDB1).
 
 Date : 18/04/2017.
 
@@ -130,7 +120,7 @@ Date : 20/04/2017.
 Descriptif : 
 	Mise en attente de la version 2 de l'application  (applicomDB1).
 	Analyse de l'application MesToColis (code, structure et diagramme de séquence) --> Levé des différentes questions, incompréhensions etc.
-	Rédaction du dossier de spécification détaillée (début).
+	Rédaction du dossier de spécification détaillée de l'application MesToColis (début).
 
 Date : 21/04/2017.
 
@@ -144,30 +134,67 @@ Descriptif :
 	Développement d'une application (version 2) de communication entre le logiciel et l'automate DB1 : 
 		- Mise en place des fonctions de paramétrage de l'application.
 		- Développement terminé.
+	Rédaction finale du dossier de spécifications détaillées (applicomDB1).
+
 Sources :
 	https://msdn.microsoft.com/fr-fr/library/af1y26ew(v=vs.80).aspx
 
+Date : 24/04/2017.
+
+Descriptif :
+	Développement de l'application MesToColis : 
+		- Ajout de la prise en charge du serveur OPC.
+		- Modification du paramétrage de l'application (ajout des balises <opc> etc).
+		- Réflexion sur le nouveau fonctionnement de l'application.
+		- Contact avec Sébastien Marais pour revoir la fonction d'envoi des données.
+	Rédaction du dossier de spécifications détaillées de l'application MesToColis.
+	Demande d'informations sur méthode d'envoi (à Sébastien Marais).
+	Mise en place d'un diagramme de Gantt.
+
 Date : 25/04/2017.
 
-Descriptif :	
-	
+Descriptif :
+	Réponse de Sébastien Marais : Problème de communication entre l'automate du site et les étiqueteuses, recherche de solutions.
+	Premier exemplaire du nouveau diagramme de séquence de la fonction d'envoi (brouillon).
 
 Date : 26/04/2017.
 
 Descriptif :	
-	
+	Développement de l'application MesToColis : 
+		- Gestion des erreurs et tracé des informations sur le déroulement de l'application (connexion, déconnexion et paramétrage).
+		- Restructuration de certains paramètres de l'application --> à faire valider.
+	Rédaction du rapport de stage.
 
 Date : 27/04/2017.
 
 Descriptif :	
-	
+	Développement de l'application MesToColis : 
+		- Analyse des fonctions de lecture du masque d'étiquette et d'écriture.
+	Rédaction de quelques algorithmes.
 
 Date : 28/04/2017.
 
 Descriptif :	
-	
+	Développement de l'application MesToColis : 
+		- Analyse des fonctions de lecture du masque d'étiquette et d'écriture.
+		- Mise en place des fonctions étudiées dans la semaine.
+	Rédaction du nouveau schéma fonctionnel détaillé et du diagramme de séquence.
+	Point sur le stage.
 
-Date : 29/04/2017.
+======================================================================================================================
+							MAI
+======================================================================================================================
 
-Descriptif :	
-	
+
+
+======================================================================================================================
+							JUIN
+======================================================================================================================
+
+
+
+======================================================================================================================
+						       JUILLET
+======================================================================================================================
+
+
