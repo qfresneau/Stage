@@ -2,14 +2,18 @@
 							AVRIL
 ======================================================================================================================Date : 03/04/2017.
 
+******************
 Date : 03/04/2017.
+******************
 
 Descriptif : 
 	Découverte de l'équipe et des locaux. Découverte rapide des bases de données et de l'environnement.
 	Analyse du dossier sur le système existant (PRJ - 00166).
 	Connexion/Inscription/Autorisation pour le compte Fleury Michon (serveur de développement 450 - SRVDEVGARE).
 
+******************
 Date : 04/04/2017.
+******************
 
 Descriptif : 
 	Relecture du dossier : mise sur papier des différentes incompréhensions.
@@ -17,7 +21,9 @@ Descriptif :
 	Préparation du rapport de stage et du support de présentation (pour la soutenance).
 	Révision des différents langages qui seront utilisé durant le stage (UML, SQL, Oracle, VB.NET, WPF, MVVM).
 
+******************
 Date : 05/04/2017.
+******************
 
 Descriptif : 
 	Mise en relation avec M.RéAU Pierrick (développeur de la version 1.1 du projet PRJ - 000166).
@@ -26,7 +32,9 @@ Descriptif :
 		Observation des fichiers qui composent l'application FleuryMichon.MesToColis.IHM.sln.
 	Lecture de la documentation "Zipher Text Communication Protocol".
 
+******************
 Date : 06/04/2017.
+******************
 
 Descriptif : 
 	Auto-apprentissage de VB.NET avec OpenClassrooms (1ère partie).
@@ -34,14 +42,16 @@ Descriptif :
 	Lancement du projet "Suppression d'iDaro" (réunion avec les utilisateurs).
 	Point sur stage.
 
-Résultat de la réunion :
+Résultat de la réunion : 
 	1 - La priorité reviens sur l'étiqueteuse Mulet, l'application envera les données directement à l'automate (synchronisation).
 	2 - Les tests seront réalisés directement sur l'automate sur le site TLM, celui-ci sera directement connecté au reste du réseau.
 	3 - Organisation et groupe de projet à voir dans les prochaines semaines.
 	4 - Fonctionnement de l'étiqueteuse "Mulet" souhaité pour fin Mai.
 	5 - Masque d'étiquette de TLM à refaire au format XML (synchronisation).
 
+******************
 Date : 07/04/2017.
+******************
 
 Descriptif : 
 	Auto-apprentissage de VB.NET avec OpenClassrooms (2nde partie).
@@ -50,7 +60,9 @@ Descriptif :
 	Rédaction d'un cahier des charges provisoire.
 	Point sur le stage.
 
+******************
 Date : 10/04/2017.
+******************
 
 Descriptif : 
 	Fin de l'auto-apprentissage de VB.NET avec OpenClassrooms (3ème partie).
@@ -61,7 +73,9 @@ Descriptif :
 		- Mise en place de l'interface graphique de l'application (une partie lecture, une partie écriture).
 		- Analyse des autres codes existant (MesToTrk pour écriture et ACQMoulageToMes pour lecture).
 
+******************
 Date : 11/04/2017.
+******************
 
 Descriptif : 
 	Développement d'une application (version 1) de communication entre le logiciel et l'automate DB1 :
@@ -73,7 +87,9 @@ Sources :
 	http://hadiscada.blogspot.fr/2013/07/my-opc-client.html
 	http://www.bh-automation.fr/Ressources/Pour-les-automaticiens/Communications/Protocoles.html (protocole OPC)
 
+******************
 Date : 12/04/2017.
+******************
 
 Descriptif : 
 	Développement d'une application (version 1) de communication entre le logiciel et l'automate DB1 : 
@@ -81,7 +97,9 @@ Descriptif :
 		- Compréhension de l'organisation du code pour la connexion.
 	Recherche de solution au problème rencontré.
 
+******************
 Date : 13/04/2017.
+******************
 
 Descriptif : 
 	Développement d'une application (version 1) de communication entre le logiciel et l'automate DB1 : 
@@ -92,7 +110,9 @@ Descriptif :
 	Développement d'une application (version 2) de communication entre le logiciel et l'automate DB1 : 
 		- Analyse du code et de l'organisation des applications existante.
 
+******************
 Date : 14/04/2017.
+******************
 
 Descriptif : 
 	Développement d'une application (version 2) de communication entre le logiciel et l'automate DB1 : 
@@ -100,7 +120,9 @@ Descriptif :
 	Lecture documentation sur "Canonical Data Types for OPC". 
 	Mise à jour du dossier de spécification détaillée (applicomDB1).
 
+******************
 Date : 18/04/2017.
+******************
 
 Descriptif : 
 	Développement d'une application (version 2) de communication entre le logiciel et l'automate DB1 : 
@@ -108,40 +130,50 @@ Descriptif :
 		- Interface à changer et structuration du code à continuer.
 	Visite du site de TLM (Suremballage) de 15h00 à 16h30 (explication des différents processus du site TLM et du fonctionnement du logiciel MES).
 
+******************
 Date : 19/04/2017.
+******************
 
 Descriptif : 
 	Développement d'une application (version 2) de communication entre le logiciel et l'automate DB1 : 
 		- Modification de l'interface graphique.
 		- Analyse de la fonction de paramétrage. 	
 
+******************
 Date : 20/04/2017.
+******************
 
 Descriptif : 
 	Mise en attente de la version 2 de l'application  (applicomDB1).
 	Analyse de l'application MesToColis (code, structure et diagramme de séquence) --> Levé des différentes questions, incompréhensions etc.
 	Rédaction du dossier de spécification détaillée de l'application MesToColis (début).
 
+******************
 Date : 21/04/2017.
+******************
 
-Descriptif :
+Descriptif : 
 	Ajout de code dans la solution MesToColis (Configuration pour automate, lecture configuration) --> Reste des incompréhensions.
 	Analyse de l'application MesToColis (code, structure et diagramme de séquence) --> Levé des différentes questions, incompréhensions etc.
 
+******************
 Date : 22/04/2017.
+******************
 
-Descriptif :	
+Descriptif : 
 	Développement d'une application (version 2) de communication entre le logiciel et l'automate DB1 : 
 		- Mise en place des fonctions de paramétrage de l'application.
 		- Développement terminé.
 	Rédaction finale du dossier de spécifications détaillées (applicomDB1).
 
-Sources :
+Sources : 
 	https://msdn.microsoft.com/fr-fr/library/af1y26ew(v=vs.80).aspx
 
+******************
 Date : 24/04/2017.
+******************
 
-Descriptif :
+Descriptif : 
 	Développement de l'application MesToColis : 
 		- Ajout de la prise en charge du serveur OPC.
 		- Modification du paramétrage de l'application (ajout des balises <opc> etc).
@@ -151,33 +183,40 @@ Descriptif :
 	Demande d'informations sur méthode d'envoi (à Sébastien Marais).
 	Mise en place d'un diagramme de Gantt.
 
+******************
 Date : 25/04/2017.
+******************
 
-Descriptif :
+Descriptif : 
 	Réponse de Sébastien Marais : Problème de communication entre l'automate du site et les étiqueteuses, recherche de solutions.
 	Premier exemplaire du nouveau diagramme de séquence de la fonction d'envoi (brouillon).
 
+******************
 Date : 26/04/2017.
+******************
 
-Descriptif :	
+Descriptif : 
 	Développement de l'application MesToColis : 
 		- Gestion des erreurs et tracé des informations sur le déroulement de l'application (connexion, déconnexion et paramétrage).
 		- Restructuration de certains paramètres de l'application --> à faire valider.
 	Rédaction du rapport de stage.
 
+******************
 Date : 27/04/2017.
+******************
 
-Descriptif :	
+Descriptif : 
 	Développement de l'application MesToColis : 
 		- Analyse des fonctions de lecture du masque d'étiquette et d'écriture.
 	Rédaction de quelques algorithmes.
 
+******************
 Date : 28/04/2017.
+******************
 
-Descriptif :	
+Descriptif : 
 	Développement de l'application MesToColis : 
 		- Analyse des fonctions de lecture du masque d'étiquette et d'écriture.
-		- Mise en place des fonctions étudiées dans la semaine.
 	Rédaction du nouveau schéma fonctionnel détaillé et du diagramme de séquence.
 	Point sur le stage.
 
@@ -185,7 +224,76 @@ Descriptif :
 							MAI
 ======================================================================================================================
 
+******************
+Date : 02/05/2017.
+******************
 
+Descriptif : 
+	Développement de l'application MesToColis : 
+		- Analyse des fonctions de lecture du masque d'étiquette et d'écriture.
+		- Réflexion sur l'envoi des données (nombre de mots, recherche accès des données, données obligatoire en mode UT <> donnée obligatoire en mode OF...).
+		- Correction de quelques bug de connexion et de droits sur le serveur de l'application.
+
+******************
+Date : 03/05/2017.
+******************
+
+Descriptif : 
+	Développement de l'application MesToColis : 
+		- Mise en place des différentes fonctions vu la semaine dernière sur l'application MesToColis.
+		- Mise en place réussi, aucune erreur lors de la compilation.
+	Débugage et test de l'application : 
+		- Lancement de l'application.
+
+******************
+Date : 04/05/2017.
+******************
+
+Descriptif : 
+	Débugage et test de l'application : 
+		- Envoi de données vers DB1 fonctionnel à voir avec Sébastien pour les vrais adresses mémoire.
+	Point sur le stage.
+	Demande d'informations sur l'avancement de la communication entre l'automate et les étiqueteuses (à Sébastien Marais).
+
+******************
+Date : 05/05/2017.
+******************
+
+Descriptif : 
+	Développement de l'application MesToColis : 
+		- Mise en place d'un nouveau paramètre (RechercheMasque) pour que le masque d'étiquette sélectionné par défaut soit celle de TLM (pour le site TLM car un seul masque utilisé).
+		- Modification sur l'initialisation du clients OPC (lors de la création des items) pour le rendre dynamique.
+		- Recherche du code pour charger un masque par défaut.
+		- Recherche de solution pour le problème de conflit de classe entre les deux fichiers de configurations (automate et étiqueteuse).
+	Réponse de Sébastien Marais, communication réussie donc envoi de la liste des différentes adresses mémoire dans lesquels l'application MesToColis, devra envoyer les données.
+
+******************
+Date : 09/05/2017.
+******************
+
+Descriptif : 
+	
+
+******************
+Date : 10/05/2017.
+******************
+
+Descriptif : 
+	
+
+******************
+Date : 11/05/2017.
+******************
+
+Descriptif : 
+	
+
+******************
+Date : 12/05/2017.
+******************
+
+Descriptif : 
+	
 
 ======================================================================================================================
 							JUIN

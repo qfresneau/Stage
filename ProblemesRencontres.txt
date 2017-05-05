@@ -1,134 +1,272 @@
+======================================================================================================================
+							AVRIL
+======================================================================================================================
+
+************
 10/04/2017 : 
+************
 
 Développement d'une application de communication entre logiciel et automate DB1 (lecture et écriture) version 1.
-Mise en place de l'interface graphique de l'application.
-Difficultés rencontrés : Framework (utilisation, définition...)
-Solution : Dossier librairie à mettre à la racine
-Partie lecture :
-	Ecriture sur l'adresse D1 de l'automate DB1 avec le logiciel APClient.
-	Lecture de l'information via l'application développée.
+Difficulté rencontrée : Framework (utilisation, définition...)
 
+Solution : 
+	Dossier librairie à mettre à la racine
+
+************
 11/04/2017 : 
+************
 
 Développement d'une application de communication entre logiciel et automate DB1 (lecture et écriture) version 1.
-Mise en place des différents évènements liés aux boutons.
 Problèmes rencontrés : fichier OPCConfigurationSection (lecture dans fichier xml)
+
 Hypothèses : 
 	- Problème de lien avec la Framework Fleury Michon ?
 	- Problème venant de la configuration du fichier ?
-Sources : 
-Compréhention de la communication via Client/Serveur OPC
-	http://hadiscada.blogspot.fr/2013/07/my-opc-client.html
-	https://www.faweb.net/us/opc/sample_vbnet.html
 
+Sources : 
+	Compréhention de la communication via Client/Serveur OPC
+http://hadiscada.blogspot.fr/2013/07/my-opc-client.html
+https://www.faweb.net/us/opc/sample_vbnet.html
+
+************
 12/04/2017 : 
+************
 
 Développement d'une application de communication entre logiciel et automate DB1 (connexion, lecture et écriture) version 1.
-Mise en place dans l'ihm d'une partie connexion au serveur OPC.
 Problèmes rencontrés : fonction OPCServer.connect() (connexion au serveur OPC)
+
 Hypothèses : 
 	- Problème de lien avec les différentes Frameworks utilisés ?
 	- Problème d'initialisation de l'objet OPCServer ?
-Solution : Il suffisait d'instancier l'objet OPCServer (new), d'où l'erreur "La référence d'objet n'est pas définie à une instance d'un objet."
-Sources : 
-Compréhention de la communication via Client/Serveur OPC
-	http://codes-sources.commentcamarche.net/forum/affich-1446285-probleme-avec-la-dll-opcdaauto-dll
-	http://codes-sources.commentcamarche.net/forum/affich-1616917-connexion-entre-un-api-elau-c600-et-un-pc-via-opc-server
 
+Solution : 
+	Il suffisait d'instancier l'objet OPCServer (new), d'où l'erreur "La référence d'objet n'est pas définie à une instance d'un objet."
+
+Sources : 
+	Compréhention de la communication via Client/Serveur OPC
+http://codes-sources.commentcamarche.net/forum/affich-1446285-probleme-avec-la-dll-opcdaauto-dll
+http://codes-sources.commentcamarche.net/forum/affich-1616917-connexion-entre-un-api-elau-c600-et-un-pc-via-opc-server
+
+************
 13/04/2017 : 
+************
 
 Développement d'une application de communication entre logiciel et automate DB1 (connexion, lecture et écriture) version 1.
-Mise en place de la lecture et l'écriture au sein de l'automate DB1 (adresse D1).
 Problèmes rencontrés : fonctions SyncWrite et SyncRead (écriture et lecture)
+
 Hypothèses : 
 	- Différence à trouver entre les fonctions normales et les fonctions Sync.
 	- Mauvais paramétrage du serveur OPC (Group puis Item) ?
 	- Mauvais paramétrage de la fonction ?
-Solution : Utilisation de la fonction Write(Value) et Read(Source, Result).
-Result est une variable de type System.Int32, optimisation possible pour gérer tous les types.  
-Sources : 
-Recherche dans le code existant avec les fichiers MesToTrk et ACQMoulageToMes.
 
-14/04/2017 :
- 
-Développement d'une application de communication entre logiciel et automate DB1 (connexion, lecture et écriture) version 2.
-Difficultés rencontrés : Rendre le code plus orienté objet en copiant la structure existante.
+Solution : 
+	Utilisation de la fonction Write(Value) et Read(Source, Result).
+	Result est une variable de type System.Int32, optimisation possible pour gérer tous les types.  
+
 Sources : 
-Recherche dans le code existant avec les fichiers MesToTrk et ACQMoulageToMes.
+	Recherche dans le code existant avec les fichiers MesToTrk et ACQMoulageToMes.
+
+************
+14/04/2017 :
+************
+
+Développement d'une application de communication entre logiciel et automate DB1 (connexion, lecture et écriture) version 2.
+Difficulté rencontrée : Rendre le code plus orienté objet en copiant la structure existante.
+
+Sources : 
+	Recherche dans le code existant avec les fichiers MesToTrk et ACQMoulageToMes.
 https://www.kepware.com/en-us/support/resource-library/technical-notes/canonical-data-types/
 
+************
 20/04/2017 :
+************
 
 Développement d'une application de communication entre logiciel et automate DB1 (connexion, lecture et écriture) version 2.
-Difficultés rencontrés : Connexion au serveur "APPLICOM.OPCServer.1" impossible.
+Difficulté rencontrée : Connexion au serveur "APPLICOM.OPCServer.1" impossible.
+
 Hypothèses : 
 	- Maintenance de prévu sur le serveur ?
 	- Trop de tentatives de connexion pendant le développement donc bloqués ? Connexion à un automate émulé donc normalement pas de risque.
+
 Essais : 
 	- Test de la version 1 de l'applicomDB1 (fonctionnel) --> impossible de se connecter.
 	- Test de connexion avec le logiciel OPClient --> Non, l'application ne répond plus une fois la connexion lancée.
 	- Arréter et relancer OPClient via le gestionnaire de tâche --> Non.
-Solution : Demande de relance du service --> OK.
 
+Solution : 
+	Demande de relance du service --> OK.
+
+************
 21/04/2017 :
+************
 
 Développement d'une application de communication entre logiciel et automate DB1 (connexion, lecture et écriture) version 2.
 Problème rencontré : Paramétrage du serveur non pris en compte.
+
 Hypothèses : 
 	- Imports inutile et qui rentre en conflits (Tracer) ?
+
 Essais : 
 	- Essai sans les imports.
 
+Solution : 
+	Il manquait les Frameworks pour que les imports puissent être pris en compte.
+
+
+----------------------------------------------------------------------------------------------------
 
 Problème rencontré : Fonction add() ne fonctionne pas.
+
 Hypothèses : 
-	- La fonction peut-elle prendre un paramètre ? Normalement oui, un objet Name.
+	- La fonction peut-elle prendre un paramètre ? Normalement oui, un objet pour le Name.
+
 Essais : 
 	- Essai sans paramètres.
 	- Essai en mode debug --> En mode debug, le programme est fonctionnel.
 
+----------------------------------------------------------------------------------------------------
+
 Problème rencontré : Ecriture et Lecture non fonctionnel.
+
 Hypothèses : 
 	- Imports inutile et qui rentre en conflits (Tracer) ?
-Essais : 
-	- Problème venant de l'instanciation de l'objet GroupeOPC, il n'était pas fait donc l'écriture n'était pas possible.
-Sources :
-Recherches de solutions dans l'ensemble deS erreurs stockées sur le site de MSDN.
+
+Solution : 
+	Problème venant de l'instanciation de l'objet GroupeOPC, il n'était pas fait donc l'écriture n'était pas possible.
+
+Sources : 
+	Recherches de solutions dans l'ensemble deS erreurs stockées sur le site de MSDN.
 https://msdn.microsoft.com/fr-fr/library/af1y26ew(v=vs.80).aspx
 
-24/04/2017 : 
-
-Développement de l'application MesToColis.
-Sources : 
-Dossier de spécifications générales de l'application MesToColis.
-
+************
 25/04/2017 : 
+************
 
 Développement de l'application MesToColis.
 Problème rencontré : Communication entre l'automate Schneider et étiqueteuse non pris en charge. --> Recherche de solution par le responsable (Sébastien Marais).
-Solution : Communication réussi, tentative d'échange de trame simple en Zipher ASCII.
+
+Solution : 
+	Communication réussi, tentative d'échange de trame simple en Zipher ASCII.
+
+----------------------------------------------------------------------------------------------------
+
 Problème rencontré : La communication OPC ne sera peut être pas utilisable avec le Schneider.
-Essais:
+
+Essais : 
 	- Recherche sur les sites officielles. --> La marque Schneider Electronics intervient dans les automates pris en charge par la communication OPC (Framework Automation).
+
 Sources : 
-Dossier de spécifications générales de l'application MesToColis.
+	Dossier de spécifications générales de l'application MesToColis.
 http://www.automation-sense.com/blog/automatisme/communication-pc-automate-avec-visual-basic-ou-c.html
 
+************
 26/04/2017 : 
+************
 
 Développement de l'application MesToColis.
 Difficulté rencontrée : Recherche des différents paramètres et fonctions d'envoies à réaliser ou revoir sur l'application.
-Sources : 
-Dossier de spécifications générales de l'application MesToColis.
 
-27/04/2017 : 
+Sources : 
+	Dossier de spécifications générales de l'application MesToColis.
+
+
+======================================================================================================================
+							MAI
+======================================================================================================================
+
+************
+02/05/2017 :
+************
 
 Développement de l'application MesToColis.
-Sources : 
-Dossier de spécifications générales de l'application MesToColis.
+Problème rencontré : Lancement de l'application MesToColis impossible sur le réseau / Ping du serveur du site MTT impossible.
 
-28/04/2017 : 
+Hypothèse : 
+	- Problème de droits ? Non.
+	- Version de l'application non stable ? Non.
+
+Solution : 
+	Fichier de connexion à la base de données incomplet, le programme se stoppait.
+C:\Windows\System32\drivers\etc\hosts
+D:\Oracle\ora11\network\admin\tnsnames.ora
+
+----------------------------------------------------------------------------------------------------
+
+Problème rencontré : Framework "log4net.dll" n'ont pris en charge alors qu'elle est bien dans le dossier C:\Windows\assembly.
+
+Hypothèse :
+	- Version antérieur donc non prise en charge ?
+
+Solution : 
+	Suppression et ajout du fichier avec une nouvelle référence.
+
+Sources : 
+https://msdn.microsoft.com/en-us/library/system.windows.markup.xamlparseexception(v=vs.110).aspx
+
+************
+03/05/2017 :
+************
 
 Développement de l'application MesToColis.
-Sources : 
-Dossier de spécifications générales de l'application MesToColis.
+Problème rencontré : Deux configuration rentre en conflit (Core.Configuration et Configuration).
+
+Hypothèse : 
+	- La classe groupElement ne peut être utiliser que par une seule configuration ? Non, besoin de paramEtiq et paramOPC.
+	- Problème de redirection ? --> Oui.
+
+Solution : 
+	Les deux fichiers de configuration sont dans des "Namespace" différents : (Core.Configuration et Configuration)
+
+----------------------------------------------------------------------------------------------------
+
+Problème rencontré : Test et débugage de l'application, arborescence du masque d'étiquette.
+
+Hypothèse : 
+	- Problème de lecture du masque ? Mauvais format ? Non.
+	- Pas d'accès à la base de donnée PMT1 ? Non.
+	- Problème d'arborescence de la masque ? --> Surement.
+
+Solution :
+	Application mal paramétrée (dans le .config) puisque TypeTransfert doit être à "SERVICE" et le code machine doit être une des machine de TLM.
+	Mauvaise compréhension du mode "SERVICE" --> à revoir /!\
+
+************
+04/05/2017 :
+************
+
+Tests et débugage de l'application MesToColis.
+Problème rencontré : Conflits de class entre deux fichiers de configuration (OPCConfigurationSection et EtiqueteuseConfigurationSection)
+
+Hypothèse : 
+	- Possibilités de renommé le la variable groupeElement ? Impossible, elle fait partie d'une classe du système.
+	- Changement de répertoire pour ne pas qu'elle rentre en conflit ? --> Oui.
+	- Erreur venant des imports de l'application ? Non.
+
+Solution : 
+	Le fichier de configuration de l'application et de l'automate doivent être dans un dossier et celui des étiqueteuses dans un autre.
+	Dans le dossier Configuration, il y a maintenant le sous dossier Core.
+
+************
+05/05/2017 :
+************
+
+Développement de l'application MesToColis.
+Problème rencontré : Lors de l'initialisation de l'application, un seul masque doit être chargé.
+
+Hypothèse : 
+	- Nom du "fic" dans le "Directory.GetFiles" ne correspond pas avec celui spécifié dans les paramètres de l'application ? Oui, le nom du fichier est précédé aussi de son arborescence.
+	- Ailleurs le programme recherche t'il des cohérance entre l'OF sélectionné et le masque sélectionné ? --> Surement, il faudrait donc zapper cette étape.
+
+Solution : 
+	
+
+======================================================================================================================
+							JUIN
+======================================================================================================================
+
+
+
+======================================================================================================================
+							JULLET
+======================================================================================================================
+
