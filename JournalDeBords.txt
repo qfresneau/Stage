@@ -38,9 +38,11 @@ Date : 06/04/2017.
 
 Descriptif : 
 	Auto-apprentissage de VB.NET avec OpenClassrooms (1ère partie).
-	https://openclassrooms.com/courses/apprenez-a-programmer-en-vb-net
 	Lancement du projet "Suppression d'iDaro" (réunion avec les utilisateurs).
 	Point sur stage.
+
+Sources : 
+	https://openclassrooms.com/courses/apprenez-a-programmer-en-vb-net
 
 Résultat de la réunion : 
 	1 - La priorité reviens sur l'étiqueteuse Mulet, l'application envera les données directement à l'automate (synchronisation).
@@ -55,10 +57,13 @@ Date : 07/04/2017.
 
 Descriptif : 
 	Auto-apprentissage de VB.NET avec OpenClassrooms (2nde partie).
-	https://openclassrooms.com/courses/apprenez-a-programmer-en-vb-net/introduction-sur-les-bases-de-donnees
 	Rendez-vous avec Réau Pierrick pour explication du code des différentes applications.
 	Rédaction d'un cahier des charges provisoire.
 	Point sur le stage.
+
+Sources : 
+	https://openclassrooms.com/courses/apprenez-a-programmer-en-vb-net/introduction-sur-les-bases-de-donnees
+	http://intranet/sa/informatique/referentiel/Spcification/Forms/AllItems.aspx?RootFolder=%2Fsa%2Finformatique%2Freferentiel%2FSpcification%2FFleuryMichon
 
 ******************
 Date : 10/04/2017.
@@ -66,12 +71,14 @@ Date : 10/04/2017.
 
 Descriptif : 
 	Fin de l'auto-apprentissage de VB.NET avec OpenClassrooms (3ème partie).
-	https://openclassrooms.com/courses/apprenez-a-programmer-en-vb-net/introduction-a-la-communication
 	Lecture des documentations/spécifications générales des différents programmes existant (pour les applications MesToColis, ACQMoulageToMes et MesToTrk).
-	http://intranet/sa/informatique/referentiel/Spcification/Forms/AllItems.aspx?RootFolder=%2Fsa%2Finformatique%2Freferentiel%2FSpcification%2FFleuryMichon
 	Développement d'une application de communication (version 1) entre le logiciel et l'automate DB1 :
 		- Mise en place de l'interface graphique de l'application (une partie lecture, une partie écriture).
 		- Analyse des autres codes existant (MesToTrk pour écriture et ACQMoulageToMes pour lecture).
+
+Sources : 
+	https://openclassrooms.com/courses/apprenez-a-programmer-en-vb-net/introduction-a-la-communication
+	http://intranet/sa/informatique/referentiel/Spcification/Forms/AllItems.aspx?RootFolder=%2Fsa%2Finformatique%2Freferentiel%2FSpcification%2FFleuryMichon
 
 ******************
 Date : 11/04/2017.
@@ -82,6 +89,7 @@ Descriptif :
 		- Mise en place des différents évènements liés aux boutons.
 		- Analyse des autres codes existant (librairie, structure du code et arborescence du programme).
 		- Recherche sur le protocole OPC (Serveur/Client).
+
 Sources : 
 	https://www.faweb.net/us/opc/sample_vbnet.html
 	http://hadiscada.blogspot.fr/2013/07/my-opc-client.html
@@ -272,28 +280,50 @@ Date : 09/05/2017.
 ******************
 
 Descriptif : 
-	
+	Développement de l'application MesToColis : 
+		- Mise en place de la solution trouvée pour le conflit de classe entre OPCConfigurationSection et EtiqueteuseConfigurationSection.
+		- Mise en place du chargement d'un masque d'étiquette par défaut.
+	Rédaction de la spécification détaillée de la nouvelle version de MesToColis (recherche du sommaire).
+	Message de Sébastien Marais, prise de note des différents paramètres à rajouter à l'application.
+	Rédaction de l'algorithme pour l'envoi de données avec les nouveaux paramètres.
+
+Optimisation : 
+	- Deux flag à observer lors de l'envoi de données (un pour pouvoir envoyer les données et un après avoir envoyer les données).
+	- Ajout d'un booléen pour pouvoir envoyer ou non un ordre d'étiquetage.
+	- Deux vaques d'envois : la première avec la longueur de la valeur envoyée (valeur.lenght) et la deuxième avec les valeurs.
+	- Ajout d'une condition sur le code de la machine, en fonction de celui-ci le paramétrage de  l'application se fera différement (L98, L99 t Mulet).
+	- Modification du masque d'étiquette au format XML.
 
 ******************
 Date : 10/05/2017.
 ******************
 
 Descriptif : 
-	
+	Test de connexion avec applicomDB1 sur l'automate mise à disposition pour les phases de test (vendredi).
+	Rédaction de la spécification détaillée de la nouvelle version de MesToColis (reprise de l'existant).
 
 ******************
 Date : 11/05/2017.
 ******************
 
-Descriptif : 
-	
+Descriptif :
+	Développement de l'application MesToColis : 
+		- Remise en place de la fonction Lecture(int, int) pour les observations sur les différents flag mis en place.
+	Rédaction de la spécification détaillée de la nouvelle version de MesToColis (ajout des modifications).
+	Message de Sébastien Marais, communication d'une documentation sur les échanges avec l'automate.
 
 ******************
 Date : 12/05/2017.
 ******************
 
 Descriptif : 
-	
+	Rédaction finale de la spécification détaillée de la nouvelle version de MesToColis (corection et relecture).
+	Copie et modification du masque 101.xml (MTT) pour  devenir TLM_test.xml (TLM).
+	Analyse de la documentation envoyé par Sébastien Marais.
+	Mise en place du banc de test dans le bureau de TLM avec l'automate de test.
+	Ajout de l'automate TLM_TEST sur le réseau APPLICOM.OPCServer.1.
+	Test de connexion avec applicomDB1 sur l'automate installé.
+	Point sur le stage.
 
 ======================================================================================================================
 							JUIN

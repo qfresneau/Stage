@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-05-01" view-index="0" gantt-divider-location="505" resource-divider-location="300" version="2.7.2" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-03-27" view-index="0" gantt-divider-location="505" resource-divider-location="300" version="2.7.2" locale="fr">
     <description/>
-    <view zooming-state="default:5" id="gantt-chart">
+    <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd3" name="Nom" width="56" order="0"/>
         <field id="tpd4" name="Date de début" width="22" order="1"/>
         <field id="tpd5" name="Date de fin" width="20" order="2"/>
@@ -67,17 +67,23 @@ Autonomie.]]></notes>
 Recherche des modifications à apporter au code existant.
 Rédaction et mise à jour des différents diagrammes et schémas fonctionnels.]]></notes>
         </task>
-        <task id="9" name="Modifications MesToColis" color="#33ff33" meeting="false" start="2017-05-01" duration="10" complete="0" expand="true">
+        <task id="9" name="Modifications MesToColis" color="#33ff33" meeting="false" start="2017-05-01" duration="9" complete="0" expand="true">
             <notes><![CDATA[Objectif 2 : Développemnt de la première version de MesToColis.
 Semaine 1 : 
 Restructuration du code pour gérer les communications avec un automate et/ou une étiqueteuse et la lecture des nouveaux paramètres.
 Mise en place des fonctions analysées la semaine passée.
 Semaine 2 : 
 Test et débugage de l'application MesToColis.
-Recherches d'éventuels bug et dernières modifications pour l'envoie des données.]]></notes>
+Recherches d'éventuels bug et dernières modifications pour l'envoie des données.
+Rédaction de la spécification détaillée de la nouvelle version de l'application.]]></notes>
         </task>
-        <task id="18" name="Tests et débugage de l'application" color="#ff3333" meeting="false" start="2017-05-09" duration="17" complete="0" expand="true">
-            <notes><![CDATA[Test et mise en place du systême sur le site TLM.]]></notes>
+        <task id="18" name="Tests et débugage de l'application" color="#ff3333" meeting="false" start="2017-05-12" duration="14" complete="0" expand="true">
+            <notes><![CDATA[Objectifs : Test et mise en place du systême sur le site TLM.
+Semaine 1 : 
+Mise en place du banc de test avec l'automate M340 (Schneider Electronics).
+Tests et débugage lors de l'envoi de données vers l'automate. 
+Semaine 2 : 
+Mise en place du systême sur le site de production.]]></notes>
         </task>
     </tasks>
     <resources/>

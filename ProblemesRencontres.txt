@@ -224,7 +224,7 @@ Problème rencontré : Test et débugage de l'application, arborescence du masque d
 Hypothèse : 
 	- Problème de lecture du masque ? Mauvais format ? Non.
 	- Pas d'accès à la base de donnée PMT1 ? Non.
-	- Problème d'arborescence de la masque ? --> Surement.
+	- Problème d'arborescence du masque ? --> Surement.
 
 Solution :
 	Application mal paramétrée (dans le .config) puisque TypeTransfert doit être à "SERVICE" et le code machine doit être une des machine de TLM.
@@ -243,8 +243,8 @@ Hypothèse :
 	- Erreur venant des imports de l'application ? Non.
 
 Solution : 
-	Le fichier de configuration de l'application et de l'automate doivent être dans un dossier et celui des étiqueteuses dans un autre.
-	Dans le dossier Configuration, il y a maintenant le sous dossier Core.
+	Le fichier de configuration de l'application et de l'automate doivent être dans un dossier et celui des étiqueteuses dans un autre. (version 1)
+	Le conflit venait des classes groupElement et groupCollection renommé respectivement en groupElements et groupCollections dans le fichiers de configuration de l'automate (OPCConfigurationSection). (version 2)
 
 ************
 05/05/2017 :
@@ -255,10 +255,87 @@ Problème rencontré : Lors de l'initialisation de l'application, un seul masque d
 
 Hypothèse : 
 	- Nom du "fic" dans le "Directory.GetFiles" ne correspond pas avec celui spécifié dans les paramètres de l'application ? Oui, le nom du fichier est précédé aussi de son arborescence.
-	- Ailleurs le programme recherche t'il des cohérance entre l'OF sélectionné et le masque sélectionné ? --> Surement, il faudrait donc zapper cette étape.
+	- Ailleurs le programme recherche t'il des cohérances entre l'OF sélectionné et le masque sélectionné ? --> Oui il faudrait donc zapper cette étape avec le nouveau paramètre rajouté.
+	- Le paramètre Recherche_PFF y est-il pour quelque chose ? Non, ce paramètre permet de rechercher la référence du code du produit fini (pour le site MTT).
 
 Solution : 
-	
+	Deux changements sont à réaliser, un dans le ModelView.vb (à l'initialisation) et un dans le MainWindows.xaml.vb (à l'initialisation).
+
+************
+09/05/2017 :
+************
+
+Développement de l'application MesToColis.
+Problème rencontré : Le masque d'étiquette par défaut ne s'affiche pas dans la combobox.
+
+Hypothèse : 
+	- Le masque d'étiquette est-il bien paramétrer ? Oui, on a tester avec un masque de MTT.
+	- Le chemin parcouru des données du masque entre les différentes fonctions ne lance t'il pas dexceptions ? Non, test en mode débugage, les données du masque sont bien correctes. (/!\ code machine !!!)
+	- La valeur de la combobox est-elle bien pris en compte ? Non, Fonction SelectedItem et SelectedValue de la combobox n'ont pas la même signification.
+
+Solution : 
+	Initialisation de la valeur selectionné de la combobox avec SelectedValue et passage au travers des différentes vérification et recherches de masques.
+
+************
+10/05/2017 :
+************
+
+Développement de l'application MesToColis.
+Problème rencontré : Connexion avec l'automate de test basé sur TLM.
+
+Hypothèse : 
+	- L'automate n'a pas encore été mis sur le réseau de l'entreprise ? Surement .
+	- L'automate est à configurer / ajouter sur le serveur Applicom ? 
+	- La connexion OPC ne nous permet pas de nous connecter à l'automate ? 
+
+Essais : 
+	- Utilisation du logiciel PC Network Interface. --> L'automate 10.126.31.191 n'apparait pas dans la liste.
+	- Ping de quelques adresses des automates visible sr le logiciel --> Le ping est bien reçu.
+
+Solution : L'automate n'a pas pu être installé, donc il est bien configurer pour être accessible sur le réseau mais n'a pas été mis sous tension (à voir vendredi).
+
+************
+12/05/2017 : 
+************
+
+Développement de l'application MesToColis.
+Problème rencontré : Chargement d'un masque type pour TLM non géré (Videojet-1.xml), le programme plante.
+
+Hypothèse : 
+	- La structure xml (mapping) du masque n'est pas encore pris en compte ? Surement.
+	- Certaines informations nécessaires à l'étiquetage ne sont pas présentes ? Oui le numéro du masque, la libelle du masque et le code machine.
+
+Essais : 
+	- Copie et modification d'un masque existant (101.xml) pour faire apparaitre les différentes informations du masque de TLM.
+
+Solution : Les hypothèses émises confirment le problème (reste à revoir la différence entre masque d'UT et masque d'OF).
+
+----------------------------------------------------------------------------------------------------
+
+Problème rencontré : Tentative de ping l'automate de test, il n'est pas accessible.
+
+Hypothèse : 
+	- La prise Ethernet sur laquelle est branché l'automate n'est pas brassée ?
+	- Problème de Firewall, port d'émission, port switch ?
+
+Solution : Problème de passerelle et de masque lors du paramétrage de l'automate.
+
+
+----------------------------------------------------------------------------------------------------
+
+Problème rencontré : Envoi de données à l'automate, envoi possible mais jusqu'à une certaine taille des données.
+
+Hypothèse : 
+	- Fonction Write() qui ne peut pas géré autant de mémoire ? Non.
+	- Problème de paramétrage des mots de l'automate ?
+
+Essais: 
+	- Pour les entiers : envoi de 1 --> OK, envoi de 10000 --> OK, envoi supérieur --> erreur.
+	- Pour les chaines de caractères : envoi de "a" --> erreur.
+	- Envoi de la longueur d'une valeur à envoyer avant de l'envoyer --> erreur lors de l'envoi de la valeur.
+
+Solution : 
+
 
 ======================================================================================================================
 							JUIN
