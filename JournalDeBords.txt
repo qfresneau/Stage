@@ -325,6 +325,55 @@ Descriptif :
 	Test de connexion avec applicomDB1 sur l'automate installé.
 	Point sur le stage.
 
+******************
+Date : 15/05/2017.
+******************
+
+Descriptif : 
+	Tests d'envoi de données avec l'automate de test.
+	Mise en place de tous les paramètres de l'application (adaptation pour l'envoi).
+	Analyse de la fonction qui fait le lien avec la base de données.
+
+******************
+Date : 16/05/2017.
+******************
+
+Descriptif : 
+	Tests d'envoi sur adresse %MW5020:X00 et %MW5020:X01 (adresse du type %MWa:Xb c'est à dire le bit b du mot a).
+	Modification du code pour enlever les ralentissements/freeze lors de l'envoi de données.
+	Mise en place du numéros d'OF pour pouvoir l'envoyer à l'automate (changement d'adresse pour %MD5000).
+	Modification finale du schéma fonctionnel, de l'algorithme et du diagramme de séquence.
+
+******************
+Date : 17/05/2017.
+******************
+
+Descriptif : 
+	Structuration du code pour la mise en production.
+	Analyse du code pour la gestion du code #CAGETTE# dans le fichier de masque.
+	Vérification de la conformité des données à l'appuie du bouton Modifier/Enregistrer.
+	Tests et débugage de l'application.
+
+******************
+Date : 18/05/2017.
+******************
+
+Descriptif :
+	Restructuration de la gestion des erreurs avec l'automate (connexion, paramétrage, envoi et lecture) pour faciliter la mise en production.
+	Tests application MesToColis en mode UT et mode OF.
+	
+
+******************
+Date : 19/05/2017.
+******************
+
+Descriptif :
+	Tests application MesToColis avec Jérome.
+	Point sur le stage.
+	Gestion des erreurs revue pour la mise en production.
+	Mise en place d'un test de communication avec l'automate (avec affichage).
+	Modification du .config.
+
 ======================================================================================================================
 							JUIN
 ======================================================================================================================

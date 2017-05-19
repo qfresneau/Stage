@@ -334,8 +334,96 @@ Essais:
 	- Pour les chaines de caractères : envoi de "a" --> erreur.
 	- Envoi de la longueur d'une valeur à envoyer avant de l'envoyer --> erreur lors de l'envoi de la valeur.
 
+Solution : Les informations à envoyer doivent être écritent sur plusieurs mots de l'automate (un caractère pour un mot).
+https://msdn.microsoft.com/en-us/library/cc704587.aspx
+
+************
+15/05/2017 : 
+************
+
+Développement de l'application MesToColis.
+Problème rencontré : Envoi de données à l'automate, l'adresse d'un item n'est pas reconnue.
+
+Hypothèse : 
+	- L'adresse n'est pas au bon format ? Si, déjà utilisé des adresses similaires avec l'application MesToTrk.
+	- Problème venant de l'automate ? Surement.
+
+Essais : 
+	- Ajout d'un item avec le logiciel OPClient --> Adresse %MW5020:X01 non reconnu.
+	- Ajout d'un item avec le logiciel OPClient --> Adresse %MW5020:X1 reconnu.
+
+Solution : Le problème venait juste de l'adresse du mot, il ne fallait qu'un seul chiffre après le X.
+
+************
+16/05/2017 : 
+************
+
+Développement de l'application MesToColis.
+Problème rencontré : Freeze du programme lorsqu'on envoi les données.
+
+Hypothèse : 
+	- Toute l'initialisation et la connexion au serveur OPC se fait en même temps donc c'est peut-être la cause du ralentissement ? Non.
+
+Solution : Une ligne de code oubliée lors des périodes de tests (System.Threading.Threads.sleep(1000)) ce qui provoquait une pause de 1 secondes lorsqu'un groupe était ajouté.
+
+----------------------------------------------------------------------------------------------------
+
+Problème rencontré : Envoi du numéros d'OF impossible, le nombre est trop grand.
+
+Hypothèse : 
+	- Les mots des automates sont peut-être signé ? Oui.
+
+Essais : 
+	- Envoi d'un nombre caractère par caractère puis entier --> Envoi de 800000, il affiche 59.
+
+Solution : Changement de l'adresse du mot, on utilise maintenant le mot %MD5000 qui n'est pas signé donc beaucoup plus de mémoire.
+
+************
+17/05/2017 : 
+************
+
+Développement de l'application MesToColis.
+Problème rencontré : Les valeurs, une fois modifiées, ne sont pas toutes vérifiées et l'affichage d'erreur ne se fait pas.
+
+Hypothèse : 
+	- La table contenant les expréssions régulières contient-elle uneligne pour chacuns des paramètres du masque ? Non.
+	- L'utilisateur aura t'il à modifier les valeurs qui seront préchargées avec le masque ? Peut-être pas.
+	- Modifications des droits d'accès aux bouton Modifier et Enregistrer ?
+
+Essais : 
+	- Observation de la table USER_PRM_CTRL de PRODUCIM pour voir les différentes expréssions régulières qui existent --> Seulement 8, pas de CAGETTE.
+
+Solution : S'il n'existe pas d'expréssions régulières pour certains paramètres, on ne vérifie pas.
+
+----------------------------------------------------------------------------------------------------
+
+Problème rencontré : Le code #CAGETTE# présent dans le fichier xml envoyé à iDaro n'est pas reconnu.
+
+Hypothèse : 
+	- Le code #CAGETTE# n'éxiste pas (ou renommé) dans les bases de données donc impossible de trouvé le libellé ainsi que la valeur ? Surement.
+	- La valeur du code #CAGETTE# est-elle reçu d'un automate ? Non, elle est présente avec l'ensemble des informations d'un modelOf.
+	- La requête SQL permet-elle d'extrairecette information ? Peut-être pas.
+
+Essais : 
+	- Utilisation de SQL Developper pour trouver le paramètre --> Pas de code carton trouvé.
+	- Affichage de toutes les variable de l'objet de classe ModelOf et Of --> Pas de code carton trouvé (400000).
+
 Solution : 
 
+************
+19/05/2017 : 
+************
+
+Développement de l'application MesToColis.
+Problème rencontré : Alors que l'automate est débranché, certaines fonctionnalités (lorsqu'il est branché) se lancent.
+
+Hypothèse : 
+	- Problème de la gestion d'erreur lors de l'initialisation des paramètres et de la communication avec l'automate ? Oui.
+
+Essais : 
+	- Mise en place d'une fonction TestCo() --> Utilisation d'un mauvais paramètre.
+
+Solution : Lors de l'initialisation, j'utilisais la variable OPC.isconnected (coté serveur) alors que je devais utiliser la variable OPC_INIT à vrai ou faux en fonction du résultat de l'initialisation.
 
 ======================================================================================================================
 							JUIN

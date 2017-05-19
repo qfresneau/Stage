@@ -67,7 +67,7 @@ Autonomie.]]></notes>
 Recherche des modifications à apporter au code existant.
 Rédaction et mise à jour des différents diagrammes et schémas fonctionnels.]]></notes>
         </task>
-        <task id="9" name="Modifications MesToColis" color="#33ff33" meeting="false" start="2017-05-01" duration="9" complete="0" expand="true">
+        <task id="9" name="Modifications MesToColis" color="#33ff33" meeting="false" start="2017-05-01" duration="11" complete="0" expand="true">
             <notes><![CDATA[Objectif 2 : Développemnt de la première version de MesToColis.
 Semaine 1 : 
 Restructuration du code pour gérer les communications avec un automate et/ou une étiqueteuse et la lecture des nouveaux paramètres.
