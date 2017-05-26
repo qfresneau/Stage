@@ -361,7 +361,6 @@ Date : 18/05/2017.
 Descriptif :
 	Restructuration de la gestion des erreurs avec l'automate (connexion, paramétrage, envoi et lecture) pour faciliter la mise en production.
 	Tests application MesToColis en mode UT et mode OF.
-	
 
 ******************
 Date : 19/05/2017.
@@ -373,6 +372,45 @@ Descriptif :
 	Gestion des erreurs revue pour la mise en production.
 	Mise en place d'un test de communication avec l'automate (avec affichage).
 	Modification du .config.
+
+******************
+Date : 22/05/2017.
+******************
+
+Descriptif :
+	Vérification de la lecture du paramètre CAGETTE et de l'ensemble des données liés à l'UT.
+	Mise en place de plusieurs machine dans le fichier de masque.
+	Mise en place d'une message box lors du chargement d'un mauvais UT.
+	Mise en place d'une condition pour pouvoir lire le code UVC (ID_Machine manquant sur le site de TLM).
+
+******************
+Date : 23/05/2017.
+******************
+
+Descriptif :
+	Développement de MesToColis terminé.
+	Rédaction du masque d'étiquette pour l'optimisation.
+	Phase de test terminé.
+
+******************
+Date : 24/05/2017.
+******************
+
+Descriptif :
+	Préparation des tests pour phase de test finale avec M.Deschamps Stéphane.
+	Phase de test repris pour un bug de fichier (Application.g.vb).
+
+******************
+Date : 26/05/2017.
+******************
+
+Descriptif :
+	Point sur le stage.
+	Création d'une machine "MULETS" pour étiqueter un UT.
+	Création des masques respectifs pour les machines de la ligne 98, 99 et pour le Mulet.
+	Modification de la fonction TestCo() et de l'affichage au lancement de l'application MesToColis.
+	Revoir adresses requises pour les automates à chaque ligne.
+	Rédaction finale de la specification détaillée de MesToColis.
 
 ======================================================================================================================
 							JUIN
