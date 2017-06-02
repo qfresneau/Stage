@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-04-17" view-index="0" gantt-divider-location="505" resource-divider-location="300" version="2.7.2" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-05-15" view-index="0" gantt-divider-location="551" resource-divider-location="300" version="2.7.2" locale="fr">
     <description/>
     <view zooming-state="default:7" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="56" order="0"/>
-        <field id="tpd4" name="Date de début" width="22" order="1"/>
-        <field id="tpd5" name="Date de fin" width="20" order="2"/>
+        <field id="tpd3" name="Nom" width="62" order="0"/>
+        <field id="tpd4" name="Date de début" width="19" order="1"/>
+        <field id="tpd5" name="Date de fin" width="18" order="2"/>
         <option id="color.recent"><![CDATA[#999999 #ff3333 #0000ff #ffffcc #33ff33 #ccccff #ffcccc #ccffcc #0066ff #0033ff]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Nom" width="50" order="0"/>
-        <field id="1" name="Rôle par défaut" width="50" order="1"/>
+        <field id="1" name="Rôle par défaut" width="49" order="1"/>
     </view>
     <!-- -->
     <calendars base-id="france">
@@ -37,11 +37,11 @@
         <task id="0" name="Stage" color="#cccccc" meeting="false" start="2017-04-03" duration="85" complete="0" expand="true">
             <notes><![CDATA[Stage en entreprise.]]></notes>
         </task>
-        <task id="6" name="Développement MesToColis" color="#0066ff" meeting="false" start="2017-04-03" duration="43" complete="0" expand="true">
-            <notes><![CDATA[Mise en place du nouveau logiciel MesToColis.]]></notes>
+        <task id="6" name="Développement MesToColis" color="#0066ff" meeting="false" start="2017-04-10" duration="48" complete="0" expand="true">
+            <notes><![CDATA[Développement MesToColis.]]></notes>
         </task>
-        <task id="14" name="Optimisation du paramétrage XML" color="#0066ff" meeting="false" start="2017-06-01" duration="42" complete="0" expand="true">
-            <notes><![CDATA[Optimisation du paramétrage XML du masque d'étiquette.]]></notes>
+        <task id="14" name="Optimisation" color="#0066ff" meeting="false" start="2017-06-15" duration="32" complete="0" expand="true">
+            <notes><![CDATA[Optimisation.]]></notes>
         </task>
         <task id="1" name="Analyse de l'environnement" color="#ffffcc" meeting="false" start="2017-04-03" duration="5" complete="0" expand="true">
             <notes><![CDATA[Découverte des locaux, de l'environnement de travail, des collègues.
@@ -49,7 +49,7 @@ Découverte de l'application existante (structure, code, langage de programmatio
 Mise en place des différent outils de suivi de stage (Git, journal de bord, Drive...).
 Réunion de projet sur le site de Chantonnay (TLM) avec les responsables pour la mise en place des attentes et les delais du projet.]]></notes>
         </task>
-        <task id="2" name="Développement de applicomDB1 v1.0" color="#33ff33" meeting="false" start="2017-04-10" duration="10" complete="0" expand="true">
+        <task id="2" name="Développement de applicomDB1" color="#33ff33" meeting="false" start="2017-04-10" duration="10" complete="0" expand="true">
             <notes><![CDATA[Objectif 1 : Travailler la communication avec un automate.
 Semaine 1 : 
 Découverte de Visual Studio.
@@ -67,29 +67,47 @@ Autonomie.]]></notes>
 Recherche des modifications à apporter au code existant.
 Rédaction et mise à jour des différents diagrammes et schémas fonctionnels.]]></notes>
         </task>
-        <task id="9" name="Développement MesToColis" color="#33ff33" meeting="false" start="2017-05-01" duration="16" complete="0" expand="true">
+        <task id="9" name="Développement MesToColis" color="#33ff33" meeting="false" start="2017-05-01" duration="25" complete="0" expand="true">
             <notes><![CDATA[Objectif 2 : Développemnt de la première version de MesToColis.
 Semaine 1 : 
 Restructuration du code pour gérer les communications avec un automate et/ou une étiqueteuse et la lecture des nouveaux paramètres.
 Mise en place des fonctions analysées la semaine passée.
 Semaine 2 : 
-Test et débugage de l'application MesToColis.
 Recherches d'éventuels bug et dernières modifications pour l'envoie des données.
 Rédaction de la spécification détaillée de la nouvelle version de l'application.
-Semaine 3 : 
 Test et débugage de l'application MesToColis.
-Mise en place des changements demandé par M. Stéphane Deschamps.]]></notes>
+Semaine 3, 4 et 5 : 
+Rédaction de la spécification détaillée de la nouvelle version de l'application.
+Mise en place des changements demandé par M. Stéphane Deschamps.
+Test et débugage de l'application MesToColis.
+Correction de bugs]]></notes>
         </task>
-        <task id="18" name="Tests et débugage de l'application" color="#ff3333" meeting="false" start="2017-05-12" duration="14" complete="0" expand="true">
+        <task id="18" name="Tests et débugage de l'application" color="#ff3333" meeting="false" start="2017-05-15" duration="23" complete="0" expand="true">
             <notes><![CDATA[Objectifs : Test et mise en place du systême sur le site TLM.
 Semaine 1 : 
 Mise en place du banc de test avec l'automate M340 (Schneider Electronics).
 Tests et débugage lors de l'envoi de données vers l'automate. 
 Semaine 2 : 
 Tests et débugage lors de l'envoi de données vers l'automate.
-Tests et débugage de l'application.
-Semaine 3 :
-Phase de tests finales.  ]]></notes>
+Correction de bugs de communication.
+Semaine 3 et 4 : 
+Installation de l'application MesToColis sur le serveur de test de TLM.
+Tests envoi de données en direct vers l'automate de test.
+Tests envoi de données et étiquetage avec le Mulet.
+Phase de tests finales.
+Semaine 5 : 
+Mise en production du système.]]></notes>
+        </task>
+        <task id="19" name="Evolution" color="#8cb6ce" meeting="false" start="2017-06-02" duration="6" complete="0" expand="true">
+            <notes><![CDATA[Objectifs : Optimisation et évolution de l'application MesToColis.
+Semaine 1 : 
+Analyse des informations fournies par M. Deschamps Stéphane pour la modification de la requête SQL lors du chargement des Ofs.
+Connexion à la BDD de test de TLM pour tester des requêtes SQL.
+Semaine 2 : 
+
+Semaine 3 et 4 : 
+
+]]></notes>
         </task>
     </tasks>
     <resources/>
@@ -99,9 +117,9 @@ Phase de tests finales.  ]]></notes>
         <displaycolumn property-id="tpd2" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd7" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd12" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd3" order="0" width="283" visible="true"/>
-        <displaycolumn property-id="tpd4" order="1" width="114" visible="true"/>
-        <displaycolumn property-id="tpd5" order="2" width="104" visible="true"/>
+        <displaycolumn property-id="tpd3" order="0" width="341" visible="true"/>
+        <displaycolumn property-id="tpd4" order="1" width="108" visible="true"/>
+        <displaycolumn property-id="tpd5" order="2" width="99" visible="true"/>
         <displaycolumn property-id="tpd6" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd10" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd11" order="-1" width="75" visible="false"/>

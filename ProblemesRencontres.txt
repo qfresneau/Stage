@@ -439,8 +439,9 @@ Hypothèse :
 Essais : 
 	- Test en mode UT (022104170158003) avec une version antérieur de MesToColis sur TLM --> Il est bien chargé.
 	- Test en mode OF --> L'information est manquante.
+	- Utilisation de la fonction dynamique --> La fonction ne fonctionne pas avec le site TLM (ID_Machine manquant)
 
-Solution : La fonction mise en place par Pierrick Reau ne fonctionne pas avec le site TLM (ID_Machine manquant --> Mise en place de celui-ci).
+Solution : La fonction utilisé auparavant charge bien le lot UVC en mode UT et il doit être entré par l'utilisateur en mode OF.
 
 ----------------------------------------------------------------------------------------------------
 
@@ -474,13 +475,87 @@ Essais :
 
 Solution : Cause du problème encore inconnue, mais il provenait du fichier Application.g.vb. Il a suffit de le supprimer et de relancer une génération de solution pour que le fichier puisse être recréé.
 
+
+************
+29/05/2017 : 
+************
+
+Développement de l'application MesToColis.
+Problème rencontré : Lors da connexion à l'automate, affichage d'une erreur en relation avec l'ajout d'item.
+
+Hypothèse : 
+	- Modification apporté qui ne convient pas ? Surement.
+	- Problème de mémoire entre les tests ? Non, chaque communication (même en cas d'erreur) se termine par stopOPC() avec une libération de la mémoire.
+	- Fonction addItems qui ne supportent pas l'ajout d'autant d'items ? Non, elle fonctionnait bien avant.
+
+Essais : 
+	- Lecture d'une documentation OPCFundation --> La fonction AddItems peut ne pas correctement fonctrionner si le groupe spécifié est déjà actif.
+	- Chargement du fichier ImportOPCManager.vb fonctionnel (sauvegarde) --> OK.
+
+Solution : Cause du problème venant d'une erreur d'inatention sur le fichier ImportOPCManager.
+
+************
+31/05/2017 : 
+************
+
+Développement de l'application MesToColis.
+Problème rencontré : Lors de l'envoi de la donnée code carton (6 caractères), l'automate affiche qu'il y a 7 caractères.
+
+Hypothèse : 
+	- Erreur d'adressage ? Surement.
+	- La valeur envoyé est plus grande que prévu ? Non.
+	- La valeur envoyer n'est pas la bonne ? Non.
+
+Essais : 
+	- Affichage avant envoi du nombre de caractère de l'information et de sa valeur --> Ils correspondent bien.
+	- Relecture de l'adressage vers l'automate --> Erreur de frappe, l'adresse du flag pour la ligne 99 était %MW5025:X0 et pour la ligne 98 %MW5024:X0 alors qu'elles doivent toutes les deux égales à %MW5024:X0.
+
+Solution : Erreur de frappe en tapant la documentation sur l'adressage de l'automate.
+
 ----------------------------------------------------------------------------------------------------
+
+Problème rencontré : Lors de la compilation du programme, celui-ci crash.
+
+Hypothèse : 
+	- Modification apporté qui ne convient pas ? Surement.
+	- Problème de mémoire sur le serveur ? Peut-être, expliquerais aussi les problèmes rencontrer quelques fois avec l'initialisation du client et serveur OPC.
+
+Essais : 
+	- Suppression des modifications --> Pas mieux, le programme ne remarque plus la framework OPCAuto.dll (Automation).
+	- Contact avec Pierrick Réau pour plus d'information --> Coïncidence avec les modifications apporté, l'espace disque sur le C et le E sont insufisant ou vont bientôt l'être.
+
+Solution : Problème de mémoire causé par les fichiers tempon créé par le programme.
 
 ======================================================================================================================
 							JUIN
 ======================================================================================================================
 
+************
+02/06/2017 : 
+************
 
+Développement de l'application MesToColis.
+Difficulté rencontrée : Identification lors de l'installation de la nouvelle version de l'application sur le serveur de test.
+
+Hypothèse : 
+	- "Utilisateur non reconnu" Pas le même nom d'utilisateur sur les différent serveur ? Surement.
+
+Essais : 
+	- Demande auprès de M. µRéau Pierrick afin de changer mon nom d'utilisateur sur les différents serveur --> fresneau.q en fresneau.adm
+
+Solution : Les hypothèses émises confirment le problème (authentification avec différen nom d'utilisateur).
+
+----------------------------------------------------------------------------------------------------
+
+Problème rencontré : 
+
+Hypothèse : 
+	- 
+
+Essais : 
+	- 
+
+Solution : 
 
 ======================================================================================================================
 							JULLET

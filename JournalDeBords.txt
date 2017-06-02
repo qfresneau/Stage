@@ -1,6 +1,6 @@
 ======================================================================================================================
 							AVRIL
-======================================================================================================================Date : 03/04/2017.
+======================================================================================================================
 
 ******************
 Date : 03/04/2017.
@@ -317,7 +317,7 @@ Date : 12/05/2017.
 ******************
 
 Descriptif : 
-	Rédaction finale de la spécification détaillée de la nouvelle version de MesToColis (corection et relecture).
+	Rédaction de la spécification détaillée de la nouvelle version de MesToColis (corection et relecture).
 	Copie et modification du masque 101.xml (MTT) pour  devenir TLM_test.xml (TLM).
 	Analyse de la documentation envoyé par Sébastien Marais.
 	Mise en place du banc de test dans le bureau de TLM avec l'automate de test.
@@ -330,8 +330,10 @@ Date : 15/05/2017.
 ******************
 
 Descriptif : 
-	Tests d'envoi de données avec l'automate de test.
-	Mise en place de tous les paramètres de l'application (adaptation pour l'envoi).
+	Développement de l'application MesToColis : 
+		- Mise en place de tous les paramètres de l'application (adaptation pour l'envoi).
+	Débugage et test de l'application : 
+		- Tests d'envoi de données avec l'automate de test.
 	Analyse de la fonction qui fait le lien avec la base de données.
 
 ******************
@@ -339,9 +341,11 @@ Date : 16/05/2017.
 ******************
 
 Descriptif : 
-	Tests d'envoi sur adresse %MW5020:X00 et %MW5020:X01 (adresse du type %MWa:Xb c'est à dire le bit b du mot a).
-	Modification du code pour enlever les ralentissements/freeze lors de l'envoi de données.
-	Mise en place du numéros d'OF pour pouvoir l'envoyer à l'automate (changement d'adresse pour %MD5000).
+	Débugage et test de l'application : 
+		- Tests d'envoi sur adresse %MW5020:X00 et %MW5020:X01 (adresse du type %MWa:Xb c'est à dire le bit b du mot a).
+	Développement de l'application MesToColis : 
+		- Modification du code pour enlever les ralentissements/freeze lors de l'envoi de données.
+		- Mise en place du numéros d'OF pour pouvoir l'envoyer à l'automate (changement d'adresse pour %MD5000).
 	Modification finale du schéma fonctionnel, de l'algorithme et du diagramme de séquence.
 
 ******************
@@ -349,39 +353,46 @@ Date : 17/05/2017.
 ******************
 
 Descriptif : 
-	Structuration du code pour la mise en production.
+	Développement de l'application MesToColis : 
+		- Structuration du code pour la mise en production.
 	Analyse du code pour la gestion du code #CAGETTE# dans le fichier de masque.
-	Vérification de la conformité des données à l'appuie du bouton Modifier/Enregistrer.
-	Tests et débugage de l'application.
+	Tests et débugage de l'application : 
+		- Vérification de la conformité des données à l'appuie du bouton Modifier/Enregistrer.
 
 ******************
 Date : 18/05/2017.
 ******************
 
 Descriptif :
-	Restructuration de la gestion des erreurs avec l'automate (connexion, paramétrage, envoi et lecture) pour faciliter la mise en production.
-	Tests application MesToColis en mode UT et mode OF.
+	Développement de l'application MesToColis : 
+		- Restructuration de la gestion des erreurs avec l'automate (connexion, paramétrage, envoi et lecture) pour faciliter la mise en production.
+	Tests et débugage de l'application : 
+		- Tests MesToColis en mode UT et mode OF.
 
 ******************
 Date : 19/05/2017.
 ******************
 
 Descriptif :
-	Tests application MesToColis avec Jérome.
+	Tests et débugage de l'application : 
+		- Tests application MesToColis avec Jérome.
 	Point sur le stage.
-	Gestion des erreurs revue pour la mise en production.
-	Mise en place d'un test de communication avec l'automate (avec affichage).
-	Modification du .config.
+	Développement de l'application MesToColis : 
+		- Gestion des erreurs revue pour la mise en production.
+		- Mise en place d'un test de communication avec l'automate (avec affichage).
+		- Modification du .config.
 
 ******************
 Date : 22/05/2017.
 ******************
 
 Descriptif :
-	Vérification de la lecture du paramètre CAGETTE et de l'ensemble des données liés à l'UT.
-	Mise en place de plusieurs machine dans le fichier de masque.
-	Mise en place d'une message box lors du chargement d'un mauvais UT.
-	Mise en place d'une condition pour pouvoir lire le code UVC (ID_Machine manquant sur le site de TLM).
+	Tests et débugage de l'application : 
+		- Vérification de la lecture du paramètre CAGETTE et de l'ensemble des données liés à l'UT.
+	Développement de l'application MesToColis : 
+		- Mise en place de plusieurs machine dans le fichier de masque.
+		- Mise en place d'une message box lors du chargement d'un mauvais UT.
+		- Mise en place d'une condition pour pouvoir lire le code UVC (ID_Machine manquant sur le site de TLM).
 
 ******************
 Date : 23/05/2017.
@@ -406,17 +417,75 @@ Date : 26/05/2017.
 
 Descriptif :
 	Point sur le stage.
-	Création d'une machine "MULETS" pour étiqueter un UT.
-	Création des masques respectifs pour les machines de la ligne 98, 99 et pour le Mulet.
-	Modification de la fonction TestCo() et de l'affichage au lancement de l'application MesToColis.
+	Développement de l'application MesToColis : 
+		- Création d'une machine "MULETS" pour étiqueter un UT.
+		- Modification de la fonction TestCo() et de l'affichage au lancement de l'application MesToColis.
+	Création des masques respectifs pour les machines des lignes 98, 99 et pour le Mulet.
 	Revoir adresses requises pour les automates à chaque ligne.
-	Rédaction finale de la specification détaillée de MesToColis.
+
+******************
+Date : 29/05/2017.
+******************
+
+Descriptif :
+	Rédaction de la specification détaillée de MesToColis.
+	Développement de l'application MesToColis : 
+		- Mise en place de la lecture du lot UVC (mode OF : saisi, mode UT : chargé).
+
+******************
+Date : 30/05/2017.
+******************
+
+Descriptif :
+	Rédaction de la specification détaillée de MesToColis.
+	Développement de l'application MesToColis : 
+		- Modification de la fonction InitStatutBar pour la gestion ou non du bit série.
+		- Modification de mise en forme UT pour que la liste de masque ne soit plus visible.
+
+******************
+Date : 31/05/2017.
+******************
+
+Descriptif :
+	Point sur le stage.
+	Développement de l'application MesToColis : 
+		- Analyse pour modification du paramètre 'TypeTransfert'.
+		- Modification lecture de donnée avec le paramètre 'RecherchePFF' en mode UT.
+	Correction de bug.
+	Tests écriture en direct avec Sébastien Marais.
 
 ======================================================================================================================
 							JUIN
 ======================================================================================================================
 
+******************
+Date : 01/06/2017.
+******************
 
+Descriptif :
+	Développement de l'application MesToColis : 
+		- Modification du paramètre 'TypeTransfert' (possibilité d'en mettre plusieurs séparées par une virgule).
+		- Modification lecture de donnée avec le paramètre 'RecherchePFF' en mode OF.
+	Rédaction de la specification détaillée de MesToColis.
+	Analyse du message de M. Deschamps Stéphane pour chargement des OFs ("palettiseur") sur la ligne 99 (suremballage).
+
+
+******************
+Date : 02/06/2017.
+******************
+
+Descriptif :
+	Développement de l'application MesToColis terminé.
+	Rédaction finale de la specification détaillée de MesToColis.
+	Analyse pour modification lecture BDD avec plusieurs code machine (evolution 1).
+	Analyse requête SQL pour chargement des OF ("palettiseur") sur la ligne 99 (suremballage) (evolution 2).
+
+******************
+Date : 02/06/2017.
+******************
+
+Descriptif :
+	Installation de la nouvelle version de MesToColis sur le serveur de test de TLM.
 
 ======================================================================================================================
 						       JUILLET
