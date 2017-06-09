@@ -169,7 +169,6 @@ Difficulté rencontrée : Recherche des différents paramètres et fonctions d'envoi
 Sources : 
 	Dossier de spécifications générales de l'application MesToColis.
 
-
 ======================================================================================================================
 							MAI
 ======================================================================================================================
@@ -539,25 +538,42 @@ Difficulté rencontrée : Identification lors de l'installation de la nouvelle ver
 
 Hypothèse : 
 	- "Utilisateur non reconnu" Pas le même nom d'utilisateur sur les différent serveur ? Surement.
+	- Le nom d'utilisateur fresneau.adm n'est toujours pas reconnu lorsque je lance l'installation alors que j'ai bien accès au serveur de développement et au serveur de test de TLM avec les mêmes identifiants et mot de passe.
 
 Essais : 
-	- Demande auprès de M. µRéau Pierrick afin de changer mon nom d'utilisateur sur les différents serveur --> fresneau.q en fresneau.adm
+	- Demande auprès de M. Réau Pierrick afin de changer mon nom d'utilisateur sur les différents serveur --> fresneau.q en fresneau.adm
 
-Solution : Les hypothèses émises confirment le problème (authentification avec différen nom d'utilisateur).
+Solution : Le problème venait de l'authentification, "fresneau.q" était inconnu au serveur de test de TLM.
 
-----------------------------------------------------------------------------------------------------
+************
+07/06/2017 : 
+************
 
-Problème rencontré : 
+Développement de l'application MesToColis.
+Problème rencontré : Sur une ligne de suremballage, les informations ne sont pas complète (avec le paramètre RecherchePFF à OUI).
 
 Hypothèse : 
-	- 
+	- Incohérence entre les différentes compétences ? Surement.
+	- Problème venant des requête SQL ? Non, elles ont été revues dans la version précédente.
+
+Solution : Problème venant tout simplement du fonctionnement des évolutions, abandon de celles-ci.
+
+************
+08/06/2017 : 
+************
+
+Développement de l'application MesToColis.
+Problème rencontré : Lorsqu'on affiche les OFs avec les compétences CONDITIONNER et SUREMBALLER, certains apparaissent en plusieurs fois.
+
+Hypothèse : 
+	- Modification à apporter sur la requête SQL (DISTINCT) ? Surement.
 
 Essais : 
-	- 
+	- Tests de différentes requêtes SQL sur SQL Developper --> Le problème venait bien de la requête, mise en place d'une clé entre le numéro d'activité de la table FIFO et la table ACTI.
 
-Solution : 
+Solution : La requête SQL faisait bien le lien avec la table FIFO_EXEC mais il n'y avait aucune clé entre la table acti et la table fifo.
 
 ======================================================================================================================
-							JULLET
+							JUILLET
 ======================================================================================================================
 

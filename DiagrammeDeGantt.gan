@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-05-15" view-index="0" gantt-divider-location="551" resource-divider-location="300" version="2.7.2" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-04-10" view-index="0" gantt-divider-location="551" resource-divider-location="300" version="2.7.2" locale="fr">
     <description/>
     <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd3" name="Nom" width="62" order="0"/>
         <field id="tpd4" name="Date de début" width="19" order="1"/>
         <field id="tpd5" name="Date de fin" width="18" order="2"/>
-        <option id="color.recent"><![CDATA[#999999 #ff3333 #0000ff #ffffcc #33ff33 #ccccff #ffcccc #ccffcc #0066ff #0033ff]]></option>
+        <option id="color.recent"><![CDATA[#33ff33 #999999 #ff3333 #0000ff #ffffcc #ccccff #ffcccc #ccffcc #0066ff #0033ff]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Nom" width="50" order="0"/>
@@ -37,10 +37,10 @@
         <task id="0" name="Stage" color="#cccccc" meeting="false" start="2017-04-03" duration="85" complete="0" expand="true">
             <notes><![CDATA[Stage en entreprise.]]></notes>
         </task>
-        <task id="6" name="Développement MesToColis" color="#0066ff" meeting="false" start="2017-04-10" duration="48" complete="0" expand="true">
+        <task id="6" name="Développement MesToColis" color="#0066ff" meeting="false" start="2017-04-10" duration="44" complete="0" expand="true">
             <notes><![CDATA[Développement MesToColis.]]></notes>
         </task>
-        <task id="14" name="Optimisation" color="#0066ff" meeting="false" start="2017-06-15" duration="32" complete="0" expand="true">
+        <task id="14" name="Optimisation" color="#0066ff" meeting="false" start="2017-06-09" duration="36" complete="0" expand="true">
             <notes><![CDATA[Optimisation.]]></notes>
         </task>
         <task id="1" name="Analyse de l'environnement" color="#ffffcc" meeting="false" start="2017-04-03" duration="5" complete="0" expand="true">
@@ -67,7 +67,7 @@ Autonomie.]]></notes>
 Recherche des modifications à apporter au code existant.
 Rédaction et mise à jour des différents diagrammes et schémas fonctionnels.]]></notes>
         </task>
-        <task id="9" name="Développement MesToColis" color="#33ff33" meeting="false" start="2017-05-01" duration="25" complete="0" expand="true">
+        <task id="9" name="Développement MesToColis" color="#33ff33" meeting="false" start="2017-05-01" duration="24" complete="0" expand="true">
             <notes><![CDATA[Objectif 2 : Développemnt de la première version de MesToColis.
 Semaine 1 : 
 Restructuration du code pour gérer les communications avec un automate et/ou une étiqueteuse et la lecture des nouveaux paramètres.
@@ -98,15 +98,21 @@ Phase de tests finales.
 Semaine 5 : 
 Mise en production du système.]]></notes>
         </task>
-        <task id="19" name="Evolution" color="#8cb6ce" meeting="false" start="2017-06-02" duration="6" complete="0" expand="true">
+        <task id="19" name="Evolution" color="#8cb6ce" meeting="false" start="2017-06-02" duration="4" complete="0" expand="true">
             <notes><![CDATA[Objectifs : Optimisation et évolution de l'application MesToColis.
 Semaine 1 : 
 Analyse des informations fournies par M. Deschamps Stéphane pour la modification de la requête SQL lors du chargement des Ofs.
 Connexion à la BDD de test de TLM pour tester des requêtes SQL.
+Abandon des évolutions à cause de la complexité du système.
+
+]]></notes>
+        </task>
+        <task id="20" name="Optimisation MesToColis" color="#33ff33" meeting="false" start="2017-06-09" duration="6" complete="0" expand="true">
+            <notes><![CDATA[Objectifs : Optimisation de l'application MesToColis.
+Semaine 1 : 
+Modification du format du masque d'étiquette de TLM.
+Modification de la fonction de lecture du masque.
 Semaine 2 : 
-
-Semaine 3 et 4 : 
-
 ]]></notes>
         </task>
     </tasks>

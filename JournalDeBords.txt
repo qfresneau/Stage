@@ -363,7 +363,7 @@ Descriptif :
 Date : 18/05/2017.
 ******************
 
-Descriptif :
+Descriptif : 
 	Développement de l'application MesToColis : 
 		- Restructuration de la gestion des erreurs avec l'automate (connexion, paramétrage, envoi et lecture) pour faciliter la mise en production.
 	Tests et débugage de l'application : 
@@ -373,7 +373,7 @@ Descriptif :
 Date : 19/05/2017.
 ******************
 
-Descriptif :
+Descriptif : 
 	Tests et débugage de l'application : 
 		- Tests application MesToColis avec Jérome.
 	Point sur le stage.
@@ -386,7 +386,7 @@ Descriptif :
 Date : 22/05/2017.
 ******************
 
-Descriptif :
+Descriptif : 
 	Tests et débugage de l'application : 
 		- Vérification de la lecture du paramètre CAGETTE et de l'ensemble des données liés à l'UT.
 	Développement de l'application MesToColis : 
@@ -398,7 +398,7 @@ Descriptif :
 Date : 23/05/2017.
 ******************
 
-Descriptif :
+Descriptif : 
 	Développement de MesToColis terminé.
 	Rédaction du masque d'étiquette pour l'optimisation.
 	Phase de test terminé.
@@ -407,7 +407,7 @@ Descriptif :
 Date : 24/05/2017.
 ******************
 
-Descriptif :
+Descriptif : 
 	Préparation des tests pour phase de test finale avec M.Deschamps Stéphane.
 	Phase de test repris pour un bug de fichier (Application.g.vb).
 
@@ -415,7 +415,7 @@ Descriptif :
 Date : 26/05/2017.
 ******************
 
-Descriptif :
+Descriptif : 
 	Point sur le stage.
 	Développement de l'application MesToColis : 
 		- Création d'une machine "MULETS" pour étiqueter un UT.
@@ -427,7 +427,7 @@ Descriptif :
 Date : 29/05/2017.
 ******************
 
-Descriptif :
+Descriptif : 
 	Rédaction de la specification détaillée de MesToColis.
 	Développement de l'application MesToColis : 
 		- Mise en place de la lecture du lot UVC (mode OF : saisi, mode UT : chargé).
@@ -436,7 +436,7 @@ Descriptif :
 Date : 30/05/2017.
 ******************
 
-Descriptif :
+Descriptif : 
 	Rédaction de la specification détaillée de MesToColis.
 	Développement de l'application MesToColis : 
 		- Modification de la fonction InitStatutBar pour la gestion ou non du bit série.
@@ -446,7 +446,7 @@ Descriptif :
 Date : 31/05/2017.
 ******************
 
-Descriptif :
+Descriptif : 
 	Point sur le stage.
 	Développement de l'application MesToColis : 
 		- Analyse pour modification du paramètre 'TypeTransfert'.
@@ -462,7 +462,7 @@ Descriptif :
 Date : 01/06/2017.
 ******************
 
-Descriptif :
+Descriptif : 
 	Développement de l'application MesToColis : 
 		- Modification du paramètre 'TypeTransfert' (possibilité d'en mettre plusieurs séparées par une virgule).
 		- Modification lecture de donnée avec le paramètre 'RecherchePFF' en mode OF.
@@ -474,18 +474,86 @@ Descriptif :
 Date : 02/06/2017.
 ******************
 
-Descriptif :
+Descriptif : 
 	Développement de l'application MesToColis terminé.
-	Rédaction finale de la specification détaillée de MesToColis.
+	Rédaction de la specification détaillée de MesToColis.
 	Analyse pour modification lecture BDD avec plusieurs code machine (evolution 1).
 	Analyse requête SQL pour chargement des OF ("palettiseur") sur la ligne 99 (suremballage) (evolution 2).
 
 ******************
-Date : 02/06/2017.
+Date : 06/06/2017.
 ******************
 
-Descriptif :
+Descriptif : 
 	Installation de la nouvelle version de MesToColis sur le serveur de test de TLM.
+	Mise en placedu paramètre competences pour le chargement des OFs.
+	Modification de la lecture des paramètres pour intégrer plusieurs codes machines et les competences.
+
+******************
+Date : 07/06/2017.
+******************
+
+Descriptif : 
+	Modification initialisation de la machine au démarrage de l'application en liste de machine (pour pouvoir intégrer plusieurs machine ou plusieurs compétences).
+	Changement des requêtes SQL pour les compétences.
+
+******************
+Date : 08/06/2017.
+******************
+
+Descriptif : 
+	Rédaction de la spécification détaillée de MesToColis.
+	Abandon de toutes les évolutions apportées dernièrement sur MesToColis (rendrait le fonctionnement de l'application trop compliqué à gérer).
+	Rechargement de l'ancienne version (1.1.17226.0).
+
+******************
+Date : 09/06/2017.
+******************
+
+Descriptif : 
+	Réinstallation de l'application sur le serveur de test pour éviter l'envoi (aucun risque d'entrer en conflit avec la production).
+	Mise en place des boutons "raccourci" (au niveau du paramétrage) sur le serveur de TLM pour tester l'application dans les différents cas d'utilisation.
+	Analyse de différentes fonctions pour lecture d'un fichier XML.
+	Création de l'algorithme de la fonction.
+	Modification du masque de TLM pour une mise au format XML.
+
+Sources : 
+	http://selkis.developpez.com/tutoriels/dotnet/Xmlpart1/#LII
+
+******************
+Date : 12/06/2017.
+******************
+
+Descriptif : 
+	
+
+******************
+Date : 13/06/2017.
+******************
+
+Descriptif : 
+	
+
+******************
+Date : 14/06/2017.
+******************
+
+Descriptif : 
+	
+
+******************
+Date : 15/06/2017.
+******************
+
+Descriptif : 
+	
+
+******************
+Date : 16/06/2017.
+******************
+
+Descriptif : 
+	
 
 ======================================================================================================================
 						       JUILLET
