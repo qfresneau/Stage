@@ -24,7 +24,7 @@ Hypothèses :
 	- Problème venant de la configuration du fichier ?
 
 Sources : 
-	Compréhention de la communication via Client/Serveur OPC
+	Apprentissage de la communication via Client/Serveur OPC
 http://hadiscada.blogspot.fr/2013/07/my-opc-client.html
 https://www.faweb.net/us/opc/sample_vbnet.html
 
@@ -572,6 +572,41 @@ Essais :
 	- Tests de différentes requêtes SQL sur SQL Developper --> Le problème venait bien de la requête, mise en place d'une clé entre le numéro d'activité de la table FIFO et la table ACTI.
 
 Solution : La requête SQL faisait bien le lien avec la table FIFO_EXEC mais il n'y avait aucune clé entre la table acti et la table fifo.
+
+************
+12/06/2017 : 
+************
+
+Développement de l'application MesToColis.
+Difficulté rencontrée : Lors du chargement du fichier de type XML, le path ne correspond pas.
+
+Hypothèse : 
+	- La fonction attend t'elle une certaine syntaxe ? Surement.
+	- La fonction utilisé est-t-elle la bonne ? LoadXml() ou Load() ? Load() puisque la fonction LoadXml charge un fichier XML avec les informations qu'on lui passe en paramètre (ex : "<Value>85</Value>").
+	- Le chargement du fichier est t-il possible s'il est ouvert ailleurs (NotePad) ? Oui.
+Essais : 
+	- Tests avec différents type de path --> Le problème venait bien de la syntaxe.
+	- Test de l'éxistence du fichier avant le chargement de celui-ci --> La chargement ne fonctionne toujours pas.
+	- Mise en place de la fonction load entre try/Catch avec affichage d'une messagebox de l'erreur --> Le problème vient de la lecture de caractères spéciales (é ou à) présents dans les commentaires.
+
+Solution : La lecture du fichier était stopper par un caractère spéciale 0 qui a du être remplacé (par e ou a).
+
+************
+14/06/2017 : 
+************
+
+Développement de l'application MesToColis.
+Problème rencontré : Modification à apporter sur la fonction de lecture des paramètres automate (OPCConfigurationSection.vb), une erreur est toujours lancé.
+
+Hypothèse : 
+	- La fonction permet t-elle de lire autant le ligne XML ? Oui.
+	
+Essais : 
+	- Ajout d'un groupCollection pour ajouter une balise <Groupe machine=""> --> Une erreur ressort tout le temps ("ID" non reconnu).
+	- Copie d'une même ligne pour qu'il y ai deux balises <group ID="" adresse=""> --> La même erreur ressort.
+	- Copie sur brouillon des différents types de balise pour le fichier des étiqueteuses et celui des automates --> Erreur de conception entre groupCollection et groupElement.
+
+Solution : Le problème venait de la conception de la lecture XML puisque lorsqu'une balise possède un attribut à lire, il est directement clasé en Element et non pas en Collection.
 
 ======================================================================================================================
 							JUILLET

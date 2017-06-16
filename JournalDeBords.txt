@@ -250,7 +250,7 @@ Descriptif :
 	Développement de l'application MesToColis : 
 		- Mise en place des différentes fonctions vu la semaine dernière sur l'application MesToColis.
 		- Mise en place réussi, aucune erreur lors de la compilation.
-	Débugage et test de l'application : 
+	Tests et débugage de l'application : 
 		- Lancement de l'application.
 
 ******************
@@ -258,7 +258,7 @@ Date : 04/05/2017.
 ******************
 
 Descriptif : 
-	Débugage et test de l'application : 
+	Tests et débugage de l'application : 
 		- Envoi de données vers DB1 fonctionnel à voir avec Sébastien pour les vrais adresses mémoire.
 	Point sur le stage.
 	Demande d'informations sur l'avancement de la communication entre l'automate et les étiqueteuses (à Sébastien Marais).
@@ -332,7 +332,7 @@ Date : 15/05/2017.
 Descriptif : 
 	Développement de l'application MesToColis : 
 		- Mise en place de tous les paramètres de l'application (adaptation pour l'envoi).
-	Débugage et test de l'application : 
+	Tests et débugage de l'application : 
 		- Tests d'envoi de données avec l'automate de test.
 	Analyse de la fonction qui fait le lien avec la base de données.
 
@@ -341,7 +341,7 @@ Date : 16/05/2017.
 ******************
 
 Descriptif : 
-	Débugage et test de l'application : 
+	Tests et débugage de l'application : 
 		- Tests d'envoi sur adresse %MW5020:X00 et %MW5020:X01 (adresse du type %MWa:Xb c'est à dire le bit b du mot a).
 	Développement de l'application MesToColis : 
 		- Modification du code pour enlever les ralentissements/freeze lors de l'envoi de données.
@@ -418,7 +418,7 @@ Date : 26/05/2017.
 Descriptif : 
 	Point sur le stage.
 	Développement de l'application MesToColis : 
-		- Création d'une machine "MULETS" pour étiqueter un UT.
+		- Création d'une machine "MULETS" pour étiquetter un UT.
 		- Modification de la fonction TestCo() et de l'affichage au lancement de l'application MesToColis.
 	Création des masques respectifs pour les machines des lignes 98, 99 et pour le Mulet.
 	Revoir adresses requises pour les automates à chaque ligne.
@@ -475,7 +475,7 @@ Date : 02/06/2017.
 ******************
 
 Descriptif : 
-	Développement de l'application MesToColis terminé.
+	Développement de l'application MesToColis terminé, mise en phase d'évolution.
 	Rédaction de la specification détaillée de MesToColis.
 	Analyse pour modification lecture BDD avec plusieurs code machine (evolution 1).
 	Analyse requête SQL pour chargement des OF ("palettiseur") sur la ligne 99 (suremballage) (evolution 2).
@@ -486,16 +486,18 @@ Date : 06/06/2017.
 
 Descriptif : 
 	Installation de la nouvelle version de MesToColis sur le serveur de test de TLM.
-	Mise en placedu paramètre competences pour le chargement des OFs.
-	Modification de la lecture des paramètres pour intégrer plusieurs codes machines et les competences.
+	Développement de l'application MesToColis : 
+		- Mise en place du paramètre competences pour le chargement des OFs.
+		- Modification de la lecture des paramètres pour intégrer plusieurs codes machines et les competences.
 
 ******************
 Date : 07/06/2017.
 ******************
 
 Descriptif : 
-	Modification initialisation de la machine au démarrage de l'application en liste de machine (pour pouvoir intégrer plusieurs machine ou plusieurs compétences).
-	Changement des requêtes SQL pour les compétences.
+	Développement de l'application MesToColis : 
+		- Modification de l'initialisation de la machine au démarrage de l'application en liste de machine (pour pouvoir intégrer plusieurs machine ou plusieurs compétences).
+		- Changement des requêtes SQL pour les compétences.
 
 ******************
 Date : 08/06/2017.
@@ -525,35 +527,53 @@ Date : 12/06/2017.
 ******************
 
 Descriptif : 
-	
+	Développement de l'application MesToColis : 
+		- Analyse de différentes fonctions pour lecture d'un fichier XML.
+		- Mise en place de la fonction pour la lecture du fichier de masque au format XML.
+	Tests et débugage de l'application : 
+		- Correction de bug.
 
 ******************
 Date : 13/06/2017.
 ******************
 
 Descriptif : 
-	
+	Développement de l'application MesToColis : 
+		- Modification de l'algorithme et de la fonction de lecture du fichier masque au format XML.
+		- Mise en place de l'écriture du fichier pour le mode SERVICE.
+	Tests et débugage de l'application : 
+		- Correction de bug.
+	Mise en relation avec Sébastien Marais pour planifier une date pour les dernier tests d'impression d'étiquette.
 
 ******************
 Date : 14/06/2017.
 ******************
 
 Descriptif : 
-	
+	Analyse du paramétrage de l'application (App.config).
+	Recherche du nouveau format de paramétrage de l'application pour qu'il soit unique pour une machine.
 
 ******************
 Date : 15/06/2017.
 ******************
 
 Descriptif : 
-	
+	Test avec M. Sébastien Marais pour étiquetage via l'étiqueteuse Mulet de la ligne L99 : étiquetage réussi.
+	Développement de l'application MesToColis : 
+		- Modification de la fonction pour le paramétrage OPC.
+		- Analyse pour une fonction de paramétrage par code machine.
 
 ******************
 Date : 16/06/2017.
 ******************
 
 Descriptif : 
-	
+	Développement de l'application MesToColis : 
+		- Mise en place d'une fonction de paramétrage par code machine.
+		- Modification de l'envoi de données avec le nouveau paramétrage.
+	Tests et débugage de l'application : 
+		- Correction de bug.
+	Point sur le stage.
 
 ======================================================================================================================
 						       JUILLET

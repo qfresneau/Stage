@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-04-10" view-index="0" gantt-divider-location="551" resource-divider-location="300" version="2.7.2" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-05-29" view-index="0" gantt-divider-location="551" resource-divider-location="300" version="2.7.2" locale="fr">
     <description/>
     <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd3" name="Nom" width="62" order="0"/>
         <field id="tpd4" name="Date de début" width="19" order="1"/>
         <field id="tpd5" name="Date de fin" width="18" order="2"/>
-        <option id="color.recent"><![CDATA[#33ff33 #999999 #ff3333 #0000ff #ffffcc #ccccff #ffcccc #ccffcc #0066ff #0033ff]]></option>
+        <option id="color.recent"><![CDATA[#ff3333 #33ff33 #999999 #0000ff #ffffcc #ccccff #ffcccc #ccffcc #0066ff #0033ff]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Nom" width="50" order="0"/>
@@ -37,10 +37,10 @@
         <task id="0" name="Stage" color="#cccccc" meeting="false" start="2017-04-03" duration="85" complete="0" expand="true">
             <notes><![CDATA[Stage en entreprise.]]></notes>
         </task>
-        <task id="6" name="Développement MesToColis" color="#0066ff" meeting="false" start="2017-04-10" duration="44" complete="0" expand="true">
+        <task id="6" name="Développement MesToColis" color="#0066ff" meeting="false" start="2017-04-10" duration="39" complete="0" expand="true">
             <notes><![CDATA[Développement MesToColis.]]></notes>
         </task>
-        <task id="14" name="Optimisation" color="#0066ff" meeting="false" start="2017-06-09" duration="36" complete="0" expand="true">
+        <task id="14" name="Optimisation" color="#0066ff" meeting="false" start="2017-06-02" duration="41" complete="0" expand="true">
             <notes><![CDATA[Optimisation.]]></notes>
         </task>
         <task id="1" name="Analyse de l'environnement" color="#ffffcc" meeting="false" start="2017-04-03" duration="5" complete="0" expand="true">
@@ -55,12 +55,10 @@ Semaine 1 :
 Découverte de Visual Studio.
 Découverte du protocole de communication OPC (communication standardisé entre un PC et un automate).
 Développement d'une première petite application pour lire et écrire dans les zones mémoires d'un automate.
-Autonomie.
 Semaine 2 : 
 Découverte de XAML, redeveloppement de la première application en utilisant XAML.
 Réorganisation du code de l'application pour rentrer dans les normes de celles de l'entreprise.
-Visite du site de Fleury Michon TLM (Chantonnay) avec Fabien pour la présentation du fonctionnement du logiciel MES au niveau suremballage et des différents processus de production de l'usine.
-Autonomie.]]></notes>
+Visite du site de Fleury Michon TLM (Chantonnay) avec Fabien pour la présentation du fonctionnement du logiciel MES au niveau suremballage et des différents processus de production de l'usine.]]></notes>
         </task>
         <task id="17" name="Analyse et préparation au développement" color="#ff3333" meeting="false" start="2017-04-24" duration="5" complete="0" expand="true">
             <notes><![CDATA[Analyses du fonctionnement de l'application MesToColis.
@@ -82,7 +80,7 @@ Mise en place des changements demandé par M. Stéphane Deschamps.
 Test et débugage de l'application MesToColis.
 Correction de bugs]]></notes>
         </task>
-        <task id="18" name="Tests et débugage de l'application" color="#ff3333" meeting="false" start="2017-05-15" duration="23" complete="0" expand="true">
+        <task id="18" name="Tests et débugage de l'application" color="#ff3333" meeting="false" start="2017-05-15" duration="14" complete="0" expand="true">
             <notes><![CDATA[Objectifs : Test et mise en place du systême sur le site TLM.
 Semaine 1 : 
 Mise en place du banc de test avec l'automate M340 (Schneider Electronics).
@@ -90,16 +88,12 @@ Tests et débugage lors de l'envoi de données vers l'automate.
 Semaine 2 : 
 Tests et débugage lors de l'envoi de données vers l'automate.
 Correction de bugs de communication.
-Semaine 3 et 4 : 
+Semaine 3 : 
 Installation de l'application MesToColis sur le serveur de test de TLM.
-Tests envoi de données en direct vers l'automate de test.
-Tests envoi de données et étiquetage avec le Mulet.
-Phase de tests finales.
-Semaine 5 : 
-Mise en production du système.]]></notes>
+Tests envoi de données en direct vers l'automate de test.]]></notes>
         </task>
         <task id="19" name="Evolution" color="#8cb6ce" meeting="false" start="2017-06-02" duration="4" complete="0" expand="true">
-            <notes><![CDATA[Objectifs : Optimisation et évolution de l'application MesToColis.
+            <notes><![CDATA[Objectifs : Evolution sur l'affichage des OFs.
 Semaine 1 : 
 Analyse des informations fournies par M. Deschamps Stéphane pour la modification de la requête SQL lors du chargement des Ofs.
 Connexion à la BDD de test de TLM pour tester des requêtes SQL.
@@ -107,13 +101,24 @@ Abandon des évolutions à cause de la complexité du système.
 
 ]]></notes>
         </task>
-        <task id="20" name="Optimisation MesToColis" color="#33ff33" meeting="false" start="2017-06-09" duration="6" complete="0" expand="true">
+        <task id="20" name="Optimisation MesToColis" color="#33ff33" meeting="false" start="2017-06-09" duration="11" complete="0" expand="true">
             <notes><![CDATA[Objectifs : Optimisation de l'application MesToColis.
 Semaine 1 : 
 Modification du format du masque d'étiquette de TLM.
 Modification de la fonction de lecture du masque.
+Tests et débugage des modifications.
 Semaine 2 : 
-]]></notes>
+Modification du paramétrage de l'application pour TLM.
+Modification de la fonction de lecture du app.config.
+Tests et débugage des modifications.]]></notes>
+        </task>
+        <task id="24" name="Tests et débugage de l'application" color="#ff3333" meeting="false" start="2017-06-19" duration="10" complete="0" expand="true">
+            <notes><![CDATA[Objectifs : Test et mise en place du systême sur le site TLM.
+Semaine 1 : 
+Tests et débugage lors du chargement des paramètres de l'application, du chargement des informations sur les OFs/UTs et de l'envoi de données vers l'automate. 
+Semaine 2 : 
+Installation de l'application MesToColis sur le serveur de test de TLM.
+Tests envoi de données en direct vers l'automate de test.]]></notes>
         </task>
     </tasks>
     <resources/>
