@@ -26,7 +26,7 @@ Date : 05/04/2017.
 ******************
 
 Descriptif : 
-	Mise en relation avec M.RéAU Pierrick (développeur de la version 1.1 du projet PRJ - 000166).
+	Mise en relation avec M.Réau Pierrick (développeur de la version 1.1 du projet PRJ - 000166).
 	Accès autoriser au référentiel et donc au dossier du projet MesToColis : 
 		Observation des différentes bases de données avec Oracle SQL DEVELOPER.
 		Observation des fichiers qui composent l'application FleuryMichon.MesToColis.IHM.sln.
@@ -408,7 +408,7 @@ Date : 24/05/2017.
 ******************
 
 Descriptif : 
-	Préparation des tests pour phase de test finale avec M.Deschamps Stéphane.
+	Préparation des tests pour les tests finales avec M.Deschamps Stéphane.
 	Phase de test repris pour un bug de fichier (Application.g.vb).
 
 ******************
@@ -467,7 +467,7 @@ Descriptif :
 		- Modification du paramètre 'TypeTransfert' (possibilité d'en mettre plusieurs séparées par une virgule).
 		- Modification lecture de donnée avec le paramètre 'RecherchePFF' en mode OF.
 	Rédaction de la specification détaillée de MesToColis.
-	Analyse du message de M. Deschamps Stéphane pour chargement des OFs ("palettiseur") sur la ligne 99 (suremballage).
+	Analyse du message de M. Deschamps Stéphane pour chargement des OFs en fonction d'une compétence sur la ligne 99 (suremballage).
 
 
 ******************
@@ -558,7 +558,7 @@ Date : 15/06/2017.
 ******************
 
 Descriptif : 
-	Test avec M. Sébastien Marais pour étiquetage via l'étiqueteuse Mulet de la ligne L99 : étiquetage réussi.
+	Test avec M.Sébastien Marais pour étiquetage via l'étiqueteuse Mulet de la ligne L99 : étiquetage réussi.
 	Développement de l'application MesToColis : 
 		- Modification de la fonction pour le paramétrage OPC.
 		- Analyse pour une fonction de paramétrage par code machine.
@@ -570,9 +570,59 @@ Date : 16/06/2017.
 Descriptif : 
 	Développement de l'application MesToColis : 
 		- Mise en place d'une fonction de paramétrage par code machine.
-		- Modification de l'envoi de données avec le nouveau paramétrage.
+		- Mise en attente de cette modification (à voir avec M.Réau Pierrick le mardi 20/06).
 	Tests et débugage de l'application : 
 		- Correction de bug.
+	Point sur le stage.
+
+******************
+Date : 19/06/2017.
+******************
+
+Descriptif : 
+	Développement de l'application MesToColis : 
+		- Modification de la copie, de la modification et de la sauvegarde du fichier tmp lorsque l'application est en mode "SERVICE".
+	Rédaction de la spécification détaillée et du rapport de stage.
+
+******************
+Date : 20/06/2017.
+******************
+
+Descriptif : 
+	Développement de l'application MesToColis : 
+		- Mise en place du paramétrage par machine.
+		- Modification du paramétrage OPC.
+	Tests et débugage de l'application : 
+		- Correction de bug.
+	Point sur le stage avec Me.Manceau Marie-Françoise et M.Deschamps Stéphane.
+
+******************
+Date : 21/06/2017.
+******************
+
+Descriptif : 
+	Développement de l'application MesToColis : 
+		- Modification de l'envoi et de la lecture de données vers l'automate.
+		- Modification de la lecture du fichier d'étiquette et du remplissage du tableau de valeur.
+	Tests et débugage de l'application : 
+		- Tests des différents paramétrages possible de l'application avec et sans l'automate.
+
+******************
+Date : 22/06/2017.
+******************
+
+Descriptif : 
+	Développement de l'application MesToColis : 
+		- Analyse du masque d'étiquette de Cambrai.
+	Rédaction de la spécification détaillée.
+
+******************
+Date : 23/06/2017.
+******************
+
+Descriptif : 
+	Point avec M.Marais Sébastien sur les derniers tests d'envoi (CodeCarton non en %MW5002 mais %MD5002 et flag normal s'il reste à 0).
+	Correction et en voi de la specification détaillée et rédaction du rapport de stage.
 	Point sur le stage.
 
 ======================================================================================================================

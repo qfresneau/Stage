@@ -600,13 +600,60 @@ Problème rencontré : Modification à apporter sur la fonction de lecture des para
 
 Hypothèse : 
 	- La fonction permet t-elle de lire autant le ligne XML ? Oui.
+	- Une balise regroupant plusieurs éléments est-t'elle nécessaire ? Peut-être.
 	
 Essais : 
 	- Ajout d'un groupCollection pour ajouter une balise <Groupe machine=""> --> Une erreur ressort tout le temps ("ID" non reconnu).
 	- Copie d'une même ligne pour qu'il y ai deux balises <group ID="" adresse=""> --> La même erreur ressort.
 	- Copie sur brouillon des différents types de balise pour le fichier des étiqueteuses et celui des automates --> Erreur de conception entre groupCollection et groupElement.
 
-Solution : Le problème venait de la conception de la lecture XML puisque lorsqu'une balise possède un attribut à lire, il est directement clasé en Element et non pas en Collection.
+Solution : Le problème venait de la conception de la lecture XML puisque lorsqu'il existe deux type de balise : les collections et les éléments. Pour le cas du masque XML de TLM, la balise "machine" est une collection de balise "Groupe" et "groups" est une collection de balise "group".
+
+************
+21/06/2017 : 
+************
+
+Développement de l'application MesToColis.
+Problème rencontré : La DLC ne respecte pas le format qu'on lui passe en paramètre.
+
+Hypothèse : 
+	- La fonction de lecture XML rentre-elle dans une autre balise que celle de la DLC ? Non.
+	- La fonction de mise en forme reçois t'elle bien les arguments de mise en forme ? Oui mais différents des dernières versions (passage de "DLC" inutile).
+
+Essais : 
+	- Tests réalisés avec un UT de test (toutes les informations doivent être lu) --> Même erreur, la date est du type dd/MM/yyyy hh:mm:ss au lieu de dd/MM/yyyy.
+	- Mode débugage pour observer et trouver d'où provient l'erreur --> Envoi de "DLC|DATE|dd/MM/yyyy" vers la fonction de mise en forme alors que sur les version précédente elle ne recevait que "DATE|dd/MM/yyyy".
+
+Solution : Le problème venait du paramètre passé pour la fonction de mise en forme de la DLC, celui ci n'était pas le même que ceux des versions précédentes.
+
+----------------------------------------------------------------------------------------------------
+
+Problème rencontré : La VA génère une levée d'exception.
+
+Hypothèse : 
+	- Le code correspondant à la VA est-il géré dans le select case ? Non, comme dans les versions précédentes de l'application, elle va dans le Case Else.
+	- La VA de l'UT choisi est-elle nulle ? Non car même si elle est nulle, elle est égale à 0.
+
+Essais : 
+	- Mode débugage pour observer et trouver d'où provient l'erreur --> Certaines variables ne sont pas réinitialisées.
+	- Tests avec différentes machines pour observer le bon chargement de la VA --> Ok.
+
+Solution : Le problème venait de certaines variables qui était utilisé et réutilisé dans le Select Case de la lecture du fichier etiquette sans qu'elles ne soient réinitialisées à 0 une fois l'utilisation terminée.
+
+----------------------------------------------------------------------------------------------------
+
+Problème rencontré : Le libellé du produit ne s'affiche pas tout le temps en fonction du code machine et de l'UT rentré.
+
+Hypothèse : 
+	- L'UT rentré ne possède pas de libellé de produit ? Impossible, c'est une valeur obligatoire.
+	- La machine utilisépossède t'elle des OFs sur sa ligne de production ? Seul la machine "MULETS" ne possède pas d'OFs puisque qu'elle n'est utilisé qu'en mode UT.
+	- Le produit correspondant a un produit fini, est-ce que le paramètre RecherchePFF doit être à OUI ? Oui.
+
+Essais : 
+	- Tests avec différents paramétrage --> Sur la ligne 98 (Mac="880026"/RecherchePFF="OUI") le libellé est affiché alors que sur la ligne 99 (Mac="880008" ou "MULETS"/RecherchePFF="NON") le libellé n'est pas affiché.
+	- Retests avec les différentes machines --> Pour l'UT 022104170158003, toutes les machines chargent bien le libellé du produit.
+
+Solution : Le problème vient du paramètre RecherchePFF qui selon la ligne est soit à "OUI" ou à "NON" mais pour le MULET, ce paramètre doit toujours être à "OUI".
 
 ======================================================================================================================
 							JUILLET
