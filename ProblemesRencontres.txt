@@ -655,6 +655,24 @@ Essais :
 
 Solution : Le problème vient du paramètre RecherchePFF qui selon la ligne est soit à "OUI" ou à "NON" mais pour le MULET, ce paramètre doit toujours être à "OUI".
 
+************
+28/06/2017 : 
+************
+
+Installation de l'application MesToColis.
+Problème rencontré : L'installation est bien réalisée mais lors de l'appui des boutons sur la vue temps réel, le programme ne se lance pas.
+
+Hypothèse : 
+	- L'installation a été correctement réalisée ? Oui.
+	- Est-ce que le dossier de l'application s'est bien mis à jour ? Oui mais le fichier de configuration lui date du 17/02/2017 alors que dans le dossier d'installation, il date bien du 26/06/2017.
+	- Est-ce que le fichier .bat du build de l'application prends bien l'ensemble du dossier ? Oui.
+
+Essais : 
+	- Réinstallation de l'application --> Même problème.
+	- Modification en dure du fichier de configuration dans le dossier d'installation --> L'application se lance bien sur la VTR.
+
+Solution : Le problème venait du fichier de paramétrage de l'installation. En effet, pour chaque site, le fichier de configuration est différent (BDD, paramètre dossier...) donc il a fallu le mettre à jour pour TLM.
+
 ======================================================================================================================
 							JUILLET
 ======================================================================================================================

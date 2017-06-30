@@ -622,11 +622,92 @@ Date : 23/06/2017.
 
 Descriptif : 
 	Point avec M.Marais Sébastien sur les derniers tests d'envoi (CodeCarton non en %MW5002 mais %MD5002 et flag normal s'il reste à 0).
-	Correction et en voi de la specification détaillée et rédaction du rapport de stage.
+	Correction et envoi de la specification détaillée et rédaction du rapport de stage.
 	Point sur le stage.
+
+******************
+Date : 26/06/2017.
+******************
+
+Descriptif : 
+	Mise en place d'une pré_analyse pour la lecture du fichier masque selon les sites de production.
+	Modification de la requête SQL pour affichage de la première UT d'un OF sélectionné.
+	Modification de la procédure d'envoi des informations vers l'automate.
+	Modification de l'affichage de la fenêtre en mode UT.
+	Suppression des paramètres en doublon et des fonctions (liés à ces paramètres).
+
+******************
+Date : 27/06/2017.
+******************
+
+Descriptif : 
+	Rédaction du rapport de stage.
+	Rédaction de la présentation orale.
+	Rédaction du support de la soutenance de stage.
+
+******************
+Date : 28/06/2017.
+******************
+
+Descriptif : 
+	Rendez-vous avec M.Deschamps Stéphane pour commencer la mise en production de l'application et la mise sur réseau de l'automate de la ligne 99.
+	Préaparation mise en production : 
+		OK - Installation de MesToColis sur le serveur de test pour dernière vérification du chargement des données.
+		OK - Création de la machine "MULETS" sur la base de données de production.
+		OK - Contacter M.Marais Sébastien pour date de mise en production.
+		OK - Demander accès NAC et l'ouverture des ports pour les automates.
+	Rédaction du rapport de stage.
+
+******************
+Date : 29/06/2017.
+******************
+
+Descriptif : 
+	Préaparation mise en production : 
+		OK - Déclarer la mise en production.
+		OK - Configurer les deux automates des lignes 98 et 99 sur le serveur APPLICOM du 04 (API_DEPOSE_ETIQ_L98_TLM et API_DEPOSE_ETIQ_L99_TLM).
+		OK - Modifier App.config pour adressage automate.
+		OK - Modifier App.config pour lecture base de données.
+	Rédaction du rapport de stage.
+
+******************
+Date : 30/06/2017.
+******************
+
+Descriptif : 
+	Préaparation mise en production : 
+		- Installation de MesToColis sur le serveur de prod sur un sous dossier Mulet (pas de risque d'atteindre l'application fonctionnel en production).
+	Rédaction du rapport de stage.
 
 ======================================================================================================================
 						       JUILLET
 ======================================================================================================================
 
+******************
+Date : 03/07/2017.
+******************
+
+Descriptif : 
+	Préaparation mise en production : 
+		- Créer un bouton sur la Vue Temps Réel pour étiquettage avec l'étiqueteuse Mulet.
+	Rédaction du rapport de stage.
+
+
+******************
+Date : 04/07/2017.
+******************
+
+Descriptif : 
+	Rédaction du rapport de stage.
+
+
+******************
+Date : 05/07/2017.
+******************
+
+Descriptif : 
+	Mise en production de MesToColis.
+	Test de l'application avec l'étiqueteuse Mulet.
+	Rédaction d'une communication sur la remontée des tests.
+	Rédaction du rapport de stage.
 

@@ -1,0 +1,38 @@
+**********************
+* Présentation orale *
+**********************
+
+Quentin Fresneau
+Professeur référent : J-P. Hamiez
+Maitre de stage : S. Deschamps
+
+Diapo 1 & 2 : 
+Présentation stage et sommaire.
+
+Diapo 3 : 
+Présentation du projet du stage dans le cadre de la licence professionnelle Logiciel Libre de la faculté des sciences d'Angers.
+Rappel du professeur référent et du responsable de stage.
+
+Diapo 4 : 
+Présentation de l'existant (MesToColis avec iDaro avec différentes versions sur différents sites de production).
+Présentation du besoin et de l'objectif du projet (rappel réunion, date butoire, mise en production etc).
+
+Diapo 5 : 
+Présentation de l'élaboration du projet (outils utilisé, période de stage etc).
+
+Diapo 6 : 
+Présentation de la période de développement (tableau de comparaison avec les nouvelle fonctionnalités à ajouter au programme).
+Présentation de la période d'évolution et d'optimisation (évolution sur affichage des OFs et optimisation avec lecture XML et paramétrage machine).
+
+Diapo 7 : 
+Présentation des tests réalisés (avec différents paramétrage)
+
+Diapo 8 : 
+Présentation des problèmes rencontrés, des hypothèses émisent, des essais réalisés et des solutions trouvées ou non.
+
+Diapo 9 : 
+Conclusion sur la stage et le sujet du projet (environnement de développement et de travail, ambiance au travail, difficulté de la mission, ressenti sur le résultat, améliorations possibles).
+Présentation du ressenti du stage et du cours de l'année.
+
+Diapo 10 : 
+Remerciements au professeur tuteur, référent du stage, personnes rencontrées et des personnes dans la salle.

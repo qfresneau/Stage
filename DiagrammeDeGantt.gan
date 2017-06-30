@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-04-24" view-index="0" gantt-divider-location="457" resource-divider-location="300" version="2.7.2" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-05-15" view-index="0" gantt-divider-location="457" resource-divider-location="300" version="2.7.2" locale="fr">
     <description/>
     <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd3" name="Nom" width="61" order="0"/>
@@ -105,7 +105,7 @@ Abandon des évolutions à cause de la complexité du système.
             <notes><![CDATA[Objectifs : Optimisation de l'application MesToColis.
 Semaine 1 : 
 Modification du format du masque d'étiquette de TLM.
-Modification de la fonction de lecture du masque.
+Modification de la fonction de lecture/écriture du masque.
 Tests et débugage des modifications.
 Semaine 2 : 
 Modification du paramétrage de l'application pour TLM.
@@ -117,8 +117,10 @@ Tests et débugage des modifications.]]></notes>
 Semaine 1 : 
 Tests et débugage lors du chargement des paramètres de l'application, du chargement des informations sur les OFs/UTs et de l'envoi de données vers l'automate. 
 Semaine 2 : 
-Installation de l'application MesToColis sur le serveur de test de TLM.
-Tests envoi de données en direct vers l'automate de test.
+Installation de l'application MesToColis sur le serveur de test et prod de TLM.
+Demande de mise en production.
+Demande d'accès NAC et d'ouverture des ports pour utilisation de l'automate.
+Configuration des automates au sein du serveur APPLICOM deu TSE 04.
 Semaine 3 : 
 Mise en place du système sur le site de production pour tester l'étiquetage avec le Mulet.]]></notes>
         </task>
