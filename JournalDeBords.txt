@@ -675,8 +675,6 @@ Date : 30/06/2017.
 ******************
 
 Descriptif : 
-	Préaparation mise en production : 
-		- Installation de MesToColis sur le serveur de prod sur un sous dossier Mulet (pas de risque d'atteindre l'application fonctionnel en production).
 	Rédaction du rapport de stage.
 
 ======================================================================================================================
@@ -689,6 +687,7 @@ Date : 03/07/2017.
 
 Descriptif : 
 	Préaparation mise en production : 
+		- Installation de l'application MesToColis sur le serveur de production de TLM.
 		- Créer un bouton sur la Vue Temps Réel pour étiquettage avec l'étiqueteuse Mulet.
 	Rédaction du rapport de stage.
 
