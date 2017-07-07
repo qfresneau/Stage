@@ -26,7 +26,7 @@ Date : 05/04/2017.
 ******************
 
 Descriptif : 
-	Mise en relation avec M.Réau Pierrick (développeur de la version 1.1 du projet PRJ - 000166).
+	Mise en relation avec M. Réau Pierrick (développeur de la version 1.1 du projet PRJ - 000166).
 	Accès autoriser au référentiel et donc au dossier du projet MesToColis : 
 		Observation des différentes bases de données avec Oracle SQL DEVELOPER.
 		Observation des fichiers qui composent l'application FleuryMichon.MesToColis.IHM.sln.
@@ -408,7 +408,7 @@ Date : 24/05/2017.
 ******************
 
 Descriptif : 
-	Préparation des tests pour les tests finales avec M.Deschamps Stéphane.
+	Préparation des tests pour les tests finales avec M. Deschamps Stéphane.
 	Phase de test repris pour un bug de fichier (Application.g.vb).
 
 ******************
@@ -558,7 +558,7 @@ Date : 15/06/2017.
 ******************
 
 Descriptif : 
-	Test avec M.Sébastien Marais pour étiquetage via l'étiqueteuse Mulet de la ligne L99 : étiquetage réussi.
+	Test avec M. Sébastien Marais pour étiquetage via l'étiqueteuse Mulet de la ligne L99 : étiquetage réussi.
 	Développement de l'application MesToColis : 
 		- Modification de la fonction pour le paramétrage OPC.
 		- Analyse pour une fonction de paramétrage par code machine.
@@ -570,7 +570,7 @@ Date : 16/06/2017.
 Descriptif : 
 	Développement de l'application MesToColis : 
 		- Mise en place d'une fonction de paramétrage par code machine.
-		- Mise en attente de cette modification (à voir avec M.Réau Pierrick le mardi 20/06).
+		- Mise en attente de cette modification (à voir avec M. Réau Pierrick le mardi 20/06).
 	Tests et débugage de l'application : 
 		- Correction de bug.
 	Point sur le stage.
@@ -594,7 +594,7 @@ Descriptif :
 		- Modification du paramétrage OPC.
 	Tests et débugage de l'application : 
 		- Correction de bug.
-	Point sur le stage avec Me.Manceau Marie-Françoise et M.Deschamps Stéphane.
+	Point sur le stage avec Me.Manceau Marie-Françoise et M. Deschamps Stéphane.
 
 ******************
 Date : 21/06/2017.
@@ -621,7 +621,7 @@ Date : 23/06/2017.
 ******************
 
 Descriptif : 
-	Point avec M.Marais Sébastien sur les derniers tests d'envoi (CodeCarton non en %MW5002 mais %MD5002 et flag normal s'il reste à 0).
+	Point avec M. Marais Sébastien sur les derniers tests d'envoi (CodeCarton non en %MW5002 mais %MD5002 et flag normal s'il reste à 0).
 	Correction et envoi de la specification détaillée et rédaction du rapport de stage.
 	Point sur le stage.
 
@@ -650,11 +650,11 @@ Date : 28/06/2017.
 ******************
 
 Descriptif : 
-	Rendez-vous avec M.Deschamps Stéphane pour commencer la mise en production de l'application et la mise sur réseau de l'automate de la ligne 99.
+	Rendez-vous avec M. Deschamps Stéphane pour commencer la mise en production de l'application et la mise sur réseau de l'automate de la ligne 99.
 	Préaparation mise en production : 
 		OK - Installation de MesToColis sur le serveur de test pour dernière vérification du chargement des données.
 		OK - Création de la machine "MULETS" sur la base de données de production.
-		OK - Contacter M.Marais Sébastien pour date de mise en production.
+		OK - Contacter M. Marais Sébastien pour date de mise en production.
 		OK - Demander accès NAC et l'ouverture des ports pour les automates.
 	Rédaction du rapport de stage.
 
@@ -687,8 +687,7 @@ Date : 03/07/2017.
 
 Descriptif : 
 	Préaparation mise en production : 
-		- Installation de l'application MesToColis sur le serveur de production de TLM.
-		- Créer un bouton sur la Vue Temps Réel pour étiquettage avec l'étiqueteuse Mulet.
+		OK - Installation de l'application MesToColis sur le serveur de production de TLM.
 	Rédaction du rapport de stage.
 
 
@@ -697,16 +696,42 @@ Date : 04/07/2017.
 ******************
 
 Descriptif : 
+	Préaparation mise en production : 
+		OK - Créer un bouton sur la Vue Temps Réel pour étiquettage avec l'étiqueteuse Mulet.
+	Mise en production : 
+		Correction de bug du bouton sur la VTR.
+	Rédaction de quelques notes pour la présentation de la nouvelle version de l'application MesToColis à M. Guillotteau Kévin.
 	Rédaction du rapport de stage.
-
 
 ******************
 Date : 05/07/2017.
 ******************
 
 Descriptif : 
-	Mise en production de MesToColis.
-	Test de l'application avec l'étiqueteuse Mulet.
+	Mise en production : 
+		Recherches de solutions.
+		Tentatives de correction.
+
+******************
+Date : 06/07/2017.
+******************
+
+Descriptif : 
+	Mise en production : 
+		Recherches de solutions.
+		Tentatives de correction.
+
+******************
+Date : 07/07/2017.
+******************
+
+Descriptif : 
+	Développement MesToColis : 
+		Modification de la fonction ConnexionServeur avec l'ajout du paramètre Serveur_IP.
+	Mise en production : 
+		Recherches d'informations.
+		Correction du problème de connexion.
+		Création d'un .bat pour le lancement de l'application en tant qu'utilisateur administrateur.
+		Modification du chemin d'accès pour le bouton de la VTR test de TLM.
 	Rédaction d'une communication sur la remontée des tests.
 	Rédaction du rapport de stage.
-

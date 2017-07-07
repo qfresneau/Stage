@@ -677,3 +677,60 @@ Solution : Le problème venait du fichier de paramétrage de l'installation. En ef
 							JUILLET
 ======================================================================================================================
 
+************
+04/07/2017 : 
+************
+
+Lancement de l'application MEsToColis.
+Problème rencontré : Lors du lancement de l'application via le bouton présent sur la VTR, une pop-up apparait.
+
+Hypothèse : 
+	- L'installation a été correctement réalisée ? Oui.
+	- L'application est-elle fonctionnelle ? Oui sur le Référentiel (450 et 94).
+	- Installation en plus requises ? Oui, celle de la version 4.5 de la Framework .NET.
+
+Essais : 
+	- Modification du lien vers l'application avec ou sans la commande w_run_cmd --> L'application ne se lance toujours pas.
+	- Téléchargement du contenu des installations plutôt long à démarrer --> Authentification sur le net requises.
+	- Copie et installation du fichier d'installation de la framework sur les différents TSE --> L'application se lance mais affichage de message d'erreur.
+	- Suppression de la command w_run_cmd --> La commande était obsolète mais un nouveau message d'erreur apparait ("<C:\producim-PROD\Interface_MesToColis_Mulet\FleuryMichon.MesToColis.exe> n’est pas un nom de fenêtre valide").
+	- La trace des erreurs rencontré lève une exception au programme sur l'erreur HRESULT 0x80040154 qui est une erreur de COM, quelques hypothèses ressortent --> Voir problème au 06/07.
+	- Des problèmes de réseau sur le site de production de Cambrais font leurs apparitions, ceci pourrait ralentir la demande pour les accès NAC et l'ouverture des ports pour les TSE sur le 04 --> Non.
+
+Solution : Le problème provenait .
+
+************
+06/07/2017 : 
+************
+
+Lancement de l'application MEsToColis.
+Problème rencontré : Lors du lancement de l'application, elle ne se conecte pas au serveur OPC (erreur 0x80040154).
+
+Hypothèse : 
+	- La Framework est peut-être "casséé ? Pas impossible mais très douteux puisque l'installation a correctement copié les autres Framework. De plus, celles-ci fonctionnaient correctement avant l'installation.
+	- La connexion n'est pas autorisé puisque les accès NAC et l'ouverture des ports des automates ne sont pas données ? Probable mais déjà demandé au près de Gaetan.
+	- Le système ne reconnait pas la nouvelle Framework utilisé pour la connexion vers un automate (OPCDAuto.dll) ? Très peu probable puisque c'est la même chose qu'avec la Framework log4net qui est actuellement utilisé (RegSrv32).
+	- Un service serait manquant ? OPCEnum.exe apparait sur le 94 et pas sur le TSE 04.
+	- Les droits d'accès ne nous sont pas donnés avec la configuration COM/DCOM ? Non puisque la configuration est correcte, vérifiée avec les fichiers cmopmgmt.msc et comexp.msc.
+	- Paramètres manquants pour la fonction connect ? Oui par la suite, il manquait un objet string contenant l'adresse IP du serveur sur lequel on souhaite se connecter.
+	- Le service n'est plus d'actualité et doit être remise à jour ? Peut-etre.
+
+Essais : 
+	- Schématisation du problème.
+	- Essai de connexion au serveur OPC via le CLSID du serveur --> Toujours la même erreur.
+	- Utilisation d'un petit applicatif nommé MyOPCClient afin de voir quelles sont les serveurs que l'ont peut trouver --> Problème avec certains serveur (freeze, délai trop long ou connexion impossible).
+	- Prise de contact avec M. Mauny Gaetan afin de demander les accès NAC et l'ouverture des ports pour les automates du serveur de test et de production.
+	- Modification de la configurations COM/DCOM des serveur 90/94 et des TSEs 02/04 --> Toujours impossible de communiquer avec l'automate.
+	- Utilisation de la commande RegSvr32 afin de "sauvegarder" la dll OPCDAAuto sur le PC --> Sauvegarde réussi mais ne change rien, l'erreur est toujours là même.
+	- Prise de contact par mail avec M. Randy Kondor de la OPCFoundation (Etats-Unis) --> Conseil d'utilisation de l'outils OPCExpert afin d'analyser les problèmes de connexion.
+	- Utilisation de l'outil OPCExpert --> Le logiciel signale un problème sur le serveur de TEST de TLM avec la connexion au serveur applicom du 94, le service OPCEnum est défaillant.
+	- Utilisation de la solution donnée par OPCExpert --> La connexion est disponible, envoi de données vers l'automate réussi (avec la modification de la fonction connect).
+
+Solution : Le problème provenait de deux choses : 
+		- D'abord la fonction connect devait recevoir en plus du nom du serveur OPC, l'adresse IP du PC qui l'héberge.
+		- Enfin, le service OPCEnum doit être installé sur chaques postes client OPC OU serveur OPC afin de pouvoir accéder aux automates.
+https://opcexpert.com/
+http://www.geii1.free.fr/Rapport/OPC.pdf
+http://therefore.net/help/2016/fr-fr/ins_connectivity_dcom.html
+http://www-lagis.univ-lille1.fr/~bonnet/supervision/cours_opc.pdf
+http://www.softwaretoolbox.com/dcom/html/configuring__opcenum1.html
