@@ -724,13 +724,29 @@ Essais :
 	- Utilisation de la commande RegSvr32 afin de "sauvegarder" la dll OPCDAAuto sur le PC --> Sauvegarde réussi mais ne change rien, l'erreur est toujours là même.
 	- Prise de contact par mail avec M. Randy Kondor de la OPCFoundation (Etats-Unis) --> Conseil d'utilisation de l'outils OPCExpert afin d'analyser les problèmes de connexion.
 	- Utilisation de l'outil OPCExpert --> Le logiciel signale un problème sur le serveur de TEST de TLM avec la connexion au serveur applicom du 94, le service OPCEnum est défaillant.
-	- Utilisation de la solution donnée par OPCExpert --> La connexion est disponible, envoi de données vers l'automate réussi (avec la modification de la fonction connect).
+	- Utilisation de la solution donnée par OPCExpert --> La connexion est disponible, envoi de données vers l'automate réussi (avec la modification de la fonction connect) mais il faut que OPCExpert soit toujours installé.
+	- Mise à jour du service OPCEnum pour la dernière version (juin 2016) --> Toujours le même problème de présence de l'application OPCExpert.
+	- En cochant "Tools/Options/Enable essentials OPC features" l'application se lance --> Dans un dossier, la seule différence avec cette action est l'apparition de certaines DLLs, le problème viendrais donc de certaines dll manquantes ? Peut-être.
+	- Mise en place du dossier OPCExpert avec le fichier d'installation de OPCExpert en .rar et du dossier contenant les DLLs générées.
 
 Solution : Le problème provenait de deux choses : 
 		- D'abord la fonction connect devait recevoir en plus du nom du serveur OPC, l'adresse IP du PC qui l'héberge.
-		- Enfin, le service OPCEnum doit être installé sur chaques postes client OPC OU serveur OPC afin de pouvoir accéder aux automates.
+		- Enfin, le service OPCEnum doit être installé sur chaques postes client OPC ET serveur OPC afin de pouvoir accéder aux automates.
 https://opcexpert.com/
 http://www.geii1.free.fr/Rapport/OPC.pdf
 http://therefore.net/help/2016/fr-fr/ins_connectivity_dcom.html
 http://www-lagis.univ-lille1.fr/~bonnet/supervision/cours_opc.pdf
 http://www.softwaretoolbox.com/dcom/html/configuring__opcenum1.html
+
+
+************
+13/07/2017 : 
+************
+
+Lancement de l'application MEsToColis.
+Problème rencontré : Lors du lancement de l'application, elle ne se conecte pas au serveur OPC (erreur 0x8000401A).
+
+Hypothèse : 
+	Un service est défaillant ?
+	L'utilisateur Courbon_Service est déjà utilisé ?
+	Simple bug ?

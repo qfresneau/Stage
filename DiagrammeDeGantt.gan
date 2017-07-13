@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-05-15" view-index="0" gantt-divider-location="457" resource-divider-location="300" version="2.7.2" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-05-29" view-index="0" gantt-divider-location="457" resource-divider-location="300" version="2.7.2" locale="fr">
     <description/>
     <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd3" name="Nom" width="61" order="0"/>
@@ -112,7 +112,7 @@ Modification du paramétrage de l'application pour TLM.
 Modification de la fonction de lecture du app.config.
 Tests et débugage des modifications.]]></notes>
         </task>
-        <task id="24" name="Tests et débugage de l'application" color="#ff3333" meeting="false" start="2017-06-19" duration="15" complete="0" expand="true">
+        <task id="24" name="Tests et débugage de l'application" color="#ff3333" meeting="false" start="2017-06-19" duration="20" complete="0" expand="true">
             <notes><![CDATA[Objectifs : Test et mise en place du systême sur le site TLM.
 Semaine 1 : 
 Tests et débugage lors du chargement des paramètres de l'application, du chargement des informations sur les OFs/UTs et de l'envoi de données vers l'automate. 
@@ -121,8 +121,11 @@ Installation de l'application MesToColis sur le serveur de test et prod de TLM.
 Demande de mise en production.
 Demande d'accès NAC et d'ouverture des ports pour utilisation de l'automate.
 Configuration des automates au sein du serveur APPLICOM deu TSE 04.
+Correction de bugs/problèmes de connexion avec le serveur OPC distant.
 Semaine 3 : 
-Mise en place du système sur le site de production pour tester l'étiquetage avec le Mulet.]]></notes>
+Prise d'informations auprès de l'infrastructure pour l'installation du service OPCEnum.
+Semaine 4 : 
+Mise en place du systèmes sur le site de production pour tester l'étiquetage avec le Mulet.]]></notes>
         </task>
     </tasks>
     <resources/>

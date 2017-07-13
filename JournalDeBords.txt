@@ -735,3 +735,57 @@ Descriptif :
 		Modification du chemin d'accès pour le bouton de la VTR test de TLM.
 	Rédaction d'une communication sur la remontée des tests.
 	Rédaction du rapport de stage.
+
+******************
+Date : 10/07/2017.
+******************
+
+Descriptif : 
+	Développement de MesToColis terminé.
+	Rédaction finale de la spécification détaillée de l'application MesToColis.
+	Rédaction du rapport de stage.
+
+******************
+Date : 11/07/2017.
+******************
+
+Descriptif : 
+	Prise d'informations pour l'installation du service OPCEnum.
+	Mise en production : 
+		Correction du problème de connexion.
+	Rédaction du rapport de stage.
+	Point sur le stage.
+
+
+******************
+Date : 12/07/2017.
+******************
+
+Descriptif : 
+	Mise en production : 
+		Derniers tests de l'application avec l'étiqueteuse Mulet ---> OK.
+		Ajout d'un bouton sur la VTR de production avec le lien vers MesToColis pour le Mulet.
+	Rédaction d'une communication sur la remontée des tests et de la mise en production.
+	Modification de la documentation de l'installation d'applicom.
+	Modification de la spec sur MesToColis.
+	Rédaction du rapport de stage.
+
+******************
+Date : 13/07/2017.
+******************
+
+Descriptif : 
+	Mise en production : 
+		Modification de l'applicatif, préparation à l'installation pour le 17/07/2017.
+		Ajout de deux autres bouton vers l'application MesToColis.
+	Modification à voir pour le site de Cambrais: 
+		Recalcul du lot UVC si changement DLC sur un OF préparé ---> OK.
+		Recalcul du lot UVC si changement DLC sur un OF en cours ---> Non géré.
+	Rédaction de la specification détaillée de l'application.
+	Rédaction de la procédure de réétiquetage.
+
+******************
+Date : 17/07/2017.
+******************
+
+Descriptif : 
