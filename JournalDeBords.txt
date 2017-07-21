@@ -742,7 +742,7 @@ Date : 10/07/2017.
 
 Descriptif : 
 	Développement de MesToColis terminé.
-	Rédaction finale de la spécification détaillée de l'application MesToColis.
+	Rédaction de la spécification détaillée de l'application MesToColis.
 	Rédaction du rapport de stage.
 
 ******************
@@ -789,3 +789,79 @@ Date : 17/07/2017.
 ******************
 
 Descriptif : 
+	Mise en production : 
+		Dernier build et installation de l'application sur les serveurs TSE de TLM.
+		Suppression des packages inutiles de l'application.
+	Rédaction et envoi de la procédure d'utilisation pour le réétiquetage avec le Mulet.
+	Mise à jour du fichier History.txt dans les fichiers d'installation.
+
+******************
+Date : 18/07/2017.
+******************
+
+Descriptif : 
+	Dernier test d'étiquetage ok : pas de remonté de problèmes.
+	Rédaction du rapport de stage.
+	Rédaction finale de la spécification détaillée de l'application MesToColis et mise en place sur l'intranet.
+
+******************
+Date : 19/07/2017.
+******************
+
+Descriptif : 
+	Rédaction du rapport de stage.
+	Rédaction des modifications à voir pour le lot UVC sur le site de Cambrais.
+	Rédaction d'un documentation sur la procédure d'utilisation du logiciel OPCExpert.
+	Modification de la documentation sur l'instalation d'un serveur APPLICOM : "En cas de problème".
+	Mise en service du dossier contenant OPCExpert sur le KIT.
+
+******************
+Date : 20/07/2017.
+******************
+
+Descriptif : 
+	Rédaction du rapport de stage.
+
+******************
+Date : 21/07/2017.
+******************
+
+Descriptif : 
+	Rédaction du rapport de stage.
+
+******************
+Date : 24/07/2017.
+******************
+
+Descriptif : 
+	Rédaction du rapport de stage.
+	Test modification DLC pour changement automatique du lot UVC sur Cambrais.
+
+******************
+Date : 25/07/2017.
+******************
+
+Descriptif : 
+	Rédaction du rapport de stage.
+
+******************
+Date : 26/07/2017.
+******************
+
+Descriptif : 
+	Rédaction du rapport de stage.
+
+******************
+Date : 27/07/2017.
+******************
+
+Descriptif : 
+	Rédaction du rapport de stage.
+
+******************
+Date : 28/07/2017.
+******************
+
+Descriptif : 
+	Rédaction du rapport de stage.
+	Point sur le stage avec M. Boisseau Jérome.

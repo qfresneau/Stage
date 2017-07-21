@@ -289,7 +289,7 @@ Hypothèse :
 
 Essais : 
 	- Utilisation du logiciel PC Network Interface. --> L'automate 10.126.31.191 n'apparait pas dans la liste.
-	- Ping de quelques adresses des automates visible sr le logiciel --> Le ping est bien reçu.
+	- Ping de quelques adresses des automates visibles sur le logiciel --> Le ping est bien reçu.
 
 Solution : L'automate n'a pas pu être installé, donc il est bien configurer pour être accessible sur le réseau mais n'a pas été mis sous tension (à voir vendredi).
 
@@ -317,7 +317,7 @@ Hypothèse :
 	- La prise Ethernet sur laquelle est branché l'automate n'est pas brassée ?
 	- Problème de Firewall, port d'émission, port switch ?
 
-Solution : Problème de passerelle et de masque lors du paramétrage de l'automate.
+Solution : Problème de passerelle lors du paramétrage de l'automate.
 
 
 ----------------------------------------------------------------------------------------------------
@@ -480,7 +480,7 @@ Solution : Cause du problème encore inconnue, mais il provenait du fichier Appli
 ************
 
 Développement de l'application MesToColis.
-Problème rencontré : Lors da connexion à l'automate, affichage d'une erreur en relation avec l'ajout d'item.
+Problème rencontré : Lors de la connexion à l'automate, affichage d'une erreur en relation avec l'ajout d'item.
 
 Hypothèse : 
 	- Modification apporté qui ne convient pas ? Surement.
@@ -502,8 +502,8 @@ Problème rencontré : Lors de l'envoi de la donnée code carton (6 caractères), l'
 
 Hypothèse : 
 	- Erreur d'adressage ? Surement.
-	- La valeur envoyé est plus grande que prévu ? Non.
-	- La valeur envoyer n'est pas la bonne ? Non.
+	- La valeur envoyée est plus grande que prévu ? Non.
+	- La valeur envoyée n'est pas la bonne ? Non.
 
 Essais : 
 	- Affichage avant envoi du nombre de caractère de l'information et de sa valeur --> Ils correspondent bien.
@@ -747,6 +747,16 @@ Lancement de l'application MEsToColis.
 Problème rencontré : Lors du lancement de l'application, elle ne se conecte pas au serveur OPC (erreur 0x8000401A).
 
 Hypothèse : 
-	Un service est défaillant ?
-	L'utilisateur Courbon_Service est déjà utilisé ?
-	Simple bug ?
+	Le service de l'applicom est défaillant ? Non.
+	L'utilisateur Courbon_Service est déjà utilisé ? Non.
+	La configuration COM/DCOM de OPCEnum a été modifié entre le serveur 90 et 94 ? Peut-être mais peu probable.
+
+Essais : 
+	- Ping du serveur APPLICOM à partir du 90 --> Le serveur renvoie bien les packets donc communication ok.
+	- Annalyse de la référence de l'erreur --> L'erreur 0x8000401A est généré à cause d'un problème d'authentification.
+	- Lancement de lm'application avec un autre utilisateur et le mot de passe qui va bien --> Toujours la même erreur.
+	- Test avec la version qui est en production depuis une semaine --> Même erreur.
+	- Lancement de l'application en étant connecté sur le 90 ET le 94 --> L'application se lance bien.
+	- Installation sur le serveur de production --> L'application tourne bien, pas de remonté d'erreurs.
+
+Solution : Le problème vient des accès vers le serveur APPLICOM 94 pourtant le système fonctionne très bien en production. On suppose donc que l'erreur provient de la configuration de OPCEnum du 94 (différente de celle du TSE 04).
