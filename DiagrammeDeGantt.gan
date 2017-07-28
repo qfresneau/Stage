@@ -4,7 +4,7 @@
         <field id="tpd3" name="Nom" width="64" order="0"/>
         <field id="tpd4" name="Date de début" width="19" order="1"/>
         <field id="tpd5" name="Date de fin" width="16" order="2"/>
-        <option id="color.recent"><![CDATA[#9900cc #0033cc #0099ff #00cc00 #ff0000 #ff9900 #ffff33 #00ff00 #0000ff #f0f0f0]]></option>
+        <option id="color.recent"><![CDATA[#00cc00 #9900cc #0033cc #0099ff #ff0000 #ff9900 #ffff33 #00ff00 #0000ff #f0f0f0]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Nom" width="50" order="0"/>

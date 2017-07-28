@@ -850,6 +850,7 @@ Date : 26/07/2017.
 
 Descriptif : 
 	Rédaction du rapport de stage.
+	Demande de documents pour les annexes du rapport de stage.
 
 ******************
 Date : 27/07/2017.
